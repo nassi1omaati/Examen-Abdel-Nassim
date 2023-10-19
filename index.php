@@ -5,14 +5,16 @@ include "dbconnect.php"
 
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Vapor Shop</title>
+    <title>Vapor FC</title>
     <link rel="stylesheet" href="styles.css">
 
-    
+
 </head>
+
 <body>
 
 
@@ -24,10 +26,9 @@ include "dbconnect.php"
         <a class="category" href="#">Categorie 4</a>
         <a class="category" href="#">Categorie 5</a>
         <a class="category" href="#">Categorie 6</a>
-        <div><img src="img/Vapor FC.png" alt="cool" width="100" height="200"></div>
-
+        <div><img src="img/Vapor FC.png" alt="cool" class="logo"></div>
     </header>
-    
+
     <div class="flex-container">
         <div><img src="img/kicks1.jpg" alt="swag" width="500" height="600"></div>
         <div><img src="img/kicks2.jpg" alt="swag" width="500" height="600"></div>
@@ -35,7 +36,7 @@ include "dbconnect.php"
         <div> <img src="img/kicks4.jpg" alt="swag" width="500" height="600"></div>
         <div> <img src="img/kicks5.jpg" alt="swag" width="500" height="600"></div>
         <div><img src="img/nutter.jpg" alt="swag" width="500" height="600"></div>
-      </div>
+    </div>
 
 
 
@@ -47,4 +48,5 @@ include "dbconnect.php"
         <a class="category1" href="#">Categorie 4</a>
     </footer>
 </body>
+
 </html>
