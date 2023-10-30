@@ -30,36 +30,17 @@ include "dbconnect.php"
         <a class="category" href="#">Categorie 6</a>
         
     </header>
-<div class="slideshow-container">
-
-<div class="mySlides fade">
-  <img src="img/kicks1.jpg" style="width:100%">
-  
-</div>
-
-<div class="mySlides fade">
-  <div class="numbertext">2 / 3</div>
-  <img src="img/kicks2.jpg" style="width:100%">
-  <div class="text">Caption Two</div>
-</div>
-
-<div class="mySlides fade">
-  <div class="numbertext">3 / 3</div>
-  <img src="img/kicks3.jpg" style="width:100%">
-  <div class="text">Caption Three</div>
-</div>
-
-<a class="prev" onclick="plusSlides(-1)">❮</a>
-<a class="next" onclick="plusSlides(1)">❯</a>
-
-</div>
-<br>
-
-<div style="text-align:center">
-  <span class="dot" onclick="currentSlide(1)"></span> 
-  <span class="dot" onclick="currentSlide(2)"></span> 
-  <span class="dot" onclick="currentSlide(3)"></span> 
-</div>
+    <div class="slider-container">
+        <div class="slider-image">
+            <img src="img/kicks1.jpg" alt="Image 1">
+        </div>
+        <div class="slider-image">
+        <img src="img/kicks2.jpg" alt="Image 2">
+        </div>
+        <div class="slider-image">
+        <img src="img/kicks3.jpg" alt="Image 3">
+        </div>
+    </div>
     <footer>
         <a class="category1" href="#">&#9990; </a>
         <a class="category1" href="#">&#9993;</a>
