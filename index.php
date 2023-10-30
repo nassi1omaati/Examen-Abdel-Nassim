@@ -30,31 +30,22 @@ include "dbconnect.php"
         <a class="category" href="#">Categorie 6</a>
         
     </header>
-
-    <footer>
-        <a class="category1" href="#">&#9990; </a>
-        <a class="category1" href="#">&#9993;</a>
-        <a class="category1" href="https://youtu.be/39XR4EXFz5Y?si=62oOaapedi_ytya8">&#9906; 3</a>
-        <a class="category1" href="#">Categorie 4</a>
-    </footer>
-</body>
-
 <div class="slideshow-container">
 
 <div class="mySlides fade">
-  <img src="img_nature_wide.jpg" style="width:100%">
+  <img src="img/kicks1.jpg" style="width:100%">
   
 </div>
 
 <div class="mySlides fade">
   <div class="numbertext">2 / 3</div>
-  <img src="img_snow_wide.jpg" style="width:100%">
+  <img src="img/kicks2.jpg" style="width:100%">
   <div class="text">Caption Two</div>
 </div>
 
 <div class="mySlides fade">
   <div class="numbertext">3 / 3</div>
-  <img src="img_mountains_wide.jpg" style="width:100%">
+  <img src="img/kicks3.jpg" style="width:100%">
   <div class="text">Caption Three</div>
 </div>
 
@@ -69,4 +60,10 @@ include "dbconnect.php"
   <span class="dot" onclick="currentSlide(2)"></span> 
   <span class="dot" onclick="currentSlide(3)"></span> 
 </div>
+    <footer>
+        <a class="category1" href="#">&#9990; </a>
+        <a class="category1" href="#">&#9993;</a>
+        <a class="category1" href="https://youtu.be/39XR4EXFz5Y?si=62oOaapedi_ytya8">&#9906; 3</a>
+        <a class="category1" href="#">Categorie 4</a>
+    </footer>
 </html>
