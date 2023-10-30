@@ -71,7 +71,8 @@
      width: 100px;
      height: 100px;
      position: absolute;
-     top: 0;
+    font-size: 25px;
      left: 0;
-     background-color: #fff;
+     text-decoration: none;
+     color: white;
  }
