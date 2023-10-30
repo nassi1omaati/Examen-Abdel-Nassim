@@ -31,18 +31,6 @@ include "dbconnect.php"
         
     </header>
 
-    <div class="flex-container">
-        <div><img src="img/kicks1.jpg" class="img-thumbnail" class="img-fluid" alt="swag" ></div>
-        <div><img src="img/kicks2.jpg" class="img-thumbnail"class="img-fluid"alt="swag" width="500" height="600"></div>
-        <div><img src="img/kicks3.jpg" class="img-thumbnail"class="img-fluid"alt="swag"></div>
-        <div> <img src="img/kicks4.jpg"class="img-thumbnail" class="img-fluid" alt="swag"></div>
-        <div> <img src="img/kicks5.jpg"class="img-thumbnail" class="img-fluid" alt="swag" ></div>
-        <div><img src="img/nutter.jpg" class="img-thumbnail"class="img-fluid" alt="swag"></div>
-    </div>
-
-
-
-
     <footer>
         <a class="category1" href="#">&#9990; </a>
         <a class="category1" href="#">&#9993;</a>
