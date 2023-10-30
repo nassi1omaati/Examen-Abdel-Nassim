@@ -27,7 +27,7 @@ include "dbconnect.php"
         <a class="category" href="#">Categorie 4</a>
         <a class="category" href="#">Categorie 5</a>
         <a class="category" href="#">Categorie 6</a>
-        <div><img src="img/Vapor FC.png" alt="cool" class="logo"></div>
+        
     </header>
 
     <div class="flex-container">
