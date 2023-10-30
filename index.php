@@ -22,6 +22,7 @@ include "dbconnect.php"
     <header>
         <h2></h2>
         <a class="logo" href="index.php">Vapor FC</a> 
+        <a class="category" href="kicksen.html">Voetbalschoenen</a>
         <a class="category" href="#">Categorie 2</a>
         <a class="category" href="#">Categorie 3</a>
         <a class="category" href="#">Categorie 4</a>
