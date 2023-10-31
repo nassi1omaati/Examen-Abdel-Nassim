@@ -17,34 +17,16 @@ include "dbconnect.php"
 </head>
 
 <body>
-
-
-    <header>
+<div class="navbar">
+        <div class="logo">
+        <img src="img/Logo.png" width="250">
         <h2></h2>
-        <a class="logo" href="index.php">Vapor FC</a> 
-        <a class="category" href="kicksen.html">Voetbalschoenen</a>
-        <a class="category" href="#">Categorie 2</a>
-        <a class="category" href="#">Categorie 3</a>
-        <a class="category" href="#">Categorie 4</a>
-        <a class="category" href="#">Categorie 5</a>
-        <a class="category" href="#">Categorie 6</a>
-        
-    </header>
-    <div class="slider-container">
-        <div class="slider-image">
-            <img src="img/kicks1.jpg" alt="Image 1">
-        </div>
-        <div class="slider-image">
-        <img src="img/kicks2.jpg" alt="Image 2">
-        </div>
-        <div class="slider-image">
-        <img src="img/kicks3.jpg" alt="Image 3">
+        <a class="category" href="#">Producten </a>
+        <a class="category" href="#">over ons</a>
+        <a class="category" href="#">account</a>
+        <a class="category" href="#">Contact</a>
         </div>
     </div>
-    <footer>
-        <a class="category1" href="#">&#9990; </a>
-        <a class="category1" href="#">&#9993;</a>
-        <a class="category1" href="https://youtu.be/39XR4EXFz5Y?si=62oOaapedi_ytya8">&#9906; 3</a>
-        <a class="category1" href="#">Categorie 4</a>
-    </footer>
+
+   
 </html>
