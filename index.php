@@ -17,16 +17,33 @@ include "dbconnect.php"
 </head>
 
 <body>
-<div class="navbar">
-        <div class="logo">
-        <img src="img/Logo.png" width="250">
-        <h2></h2>
-        <a class="category" href="#">Producten </a>
-        <a class="category" href="#">over ons</a>
-        <a class="category" href="#">account</a>
-        <a class="category" href="#">Contact</a>
+    <div class="container">
+    <div class="navbar">
+        <div class="logo1">
+        <img src="img/Logo1.png" width="250">
         </div>
+        <nav>
+            <ul>
+            <li><a class="category" href="#">Producten</a></li>
+            <li><a class="category" href="#">over ons</a></li>
+            <li><a class="category" href="#">account</a></li>
+            <li><a class="category" href="#">Contact</a></li>
+            </ul>
+        </nav>
+     </div>
+     <div class="row">
+        <div class="col-2">
+           <h1>Voetbal op nieuwe wijze!</h1> 
+           <P>lorem ipsum</P>
+        </div>
+        <div class="col-2"></div>
+            <img src="img/crissyboy.png" alt="">
+    </div>
+</div>
     </div>
 
+
+</body>
+
    
-</html>
+</html>   
