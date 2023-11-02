@@ -64,7 +64,14 @@ include "dbconnect.php"
                 <div class="footer-col-3">
                     <h2>Kiqqs</h2>
                     <ul>
-                        Algemene voorwaarden
+                       <li>Algemene voorwaarden</li> 
+                       <li>Privacy verklaring</li> 
+                       <li>Home</li> 
+                       <li>producten</li> 
+                       <li>over ons</li>
+                       <li>contact</li> 
+ 
+
                     </ul>
                 </div>
             </div>
