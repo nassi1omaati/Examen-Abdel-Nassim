@@ -42,34 +42,22 @@ include "dbconnect.php"
         </div>
         <div class="col-2">
         </div>
-            <img id="speler" src="img/voetballer.png">
+            
         </div>
      </div>
     </div>
  </div>
+ 
+  <div class="smal-container">
+    <h2>producten</h2>
+     <div class="row"></div>
+     <div class="col_4">
+        <img src="" >
+        <h4></h4>
+     </div>
 
-<!-- hier beginnen we aan de footer -->
+  </div>
 
-    <div class="footer">
-        <div class="container">
-            <div class="row">
-                <div class="footer-col-1">
-                    <h2>Kiqqs</h2>
-                    <p>Voetbal van de grond af! een nieuwe wereld!</p>
-                </div>
-                <div class="footer-col-2">
-                    <img src="img/logo1.png">
-                    <p>Voetbal van de grond af! een nieuwe wereld!</p>
-                </div>
-                <div class="footer-col-3">
-                    <h2>Kiqqs</h2>
-                    <ul>
-                        Algemene voorwaarden
-                    </ul>
-                </div>
-            </div>
-        </div>
-    </div>
 
 
 </body>
