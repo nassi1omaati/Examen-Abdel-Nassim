@@ -62,11 +62,7 @@ include "dbconnect.php"
     <img src="img/celtic3.avif" style="width:100%">
     <div class="text">Caption Three</div>
   </div>
-  <div class="mySlides fade">
-    <div class="numbertext">4 / 4</div>
-    <img src="img/celtic4.avif" style="width:100%">
-    <div class="text">Caption four</div>
-  </div>
+
 
   <!-- Next and previous buttons -->
   <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
