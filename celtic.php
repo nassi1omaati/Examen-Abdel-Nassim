@@ -1,6 +1,7 @@
 <?php
 include "dbconnect.php"
 ?>
+<script src="index.js"></script>
 
 
 <!DOCTYPE html>
@@ -34,29 +35,51 @@ include "dbconnect.php"
         </nav>
         <img src="img/cart.png" width="30px" height="30px">
      </div>
-     <div class="row">
-        <div class="col-2">
-           <h1>Voetbal van de grond af! <br>een nieuwe wereld!</h1> 
-           <P>What is Lorem Ipsum? Lorem Ipsum is simply dummy text of the printing and typesetting industry.</P>
-           <a href=""class="button">bekijk collectie</a>
-        </div>
-        <div class="col-2">
-        </div>
+   
             
         </div>
      </div>
     </div>
  </div>
  
-  <div class="smal-container">
-    <h2>producten</h2>
-     <div class="row"></div>
-     <div class="col_4">
-        <a href='celtic.php'><<img  id="celtic" src="img/celtic1.avif" ></a>
-        <h4>celtic kit</h4>
-        <p>€90</p>
-    
-     </div>
+ <div class="slideshow-container">
+
+  <!-- Full-width images with number and caption text -->
+  <div class="mySlides fade">
+    <div class="numbertext">1 / 4</div>
+    <img src="img/celtic1.avif" style="width:100%">
+    <div class="text">Caption Text</div>
+  </div>
+
+  <div class="mySlides fade">
+    <div class="numbertext">2 / 4</div>
+    <img src="img/celtic2.avif" style="width:100%">
+    <div class="text">Caption Two</div>
+  </div>
+
+  <div class="mySlides fade">
+    <div class="numbertext">3 / 4</div>
+    <img src="img/celtic3.avif" style="width:100%">
+    <div class="text">Caption Three</div>
+  </div>
+  <div class="mySlides fade">
+    <div class="numbertext">4 / 4</div>
+    <img src="img/celtic4.avif" style="width:100%">
+    <div class="text">Caption four</div>
+  </div>
+
+  <!-- Next and previous buttons -->
+  <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+  <a class="next" onclick="plusSlides(1)">&#10095;</a>
+</div>
+<br>
+
+<!-- The dots/circles -->
+<div style="text-align:center">
+  <span class="dot" onclick="currentSlide(1)"></span>
+  <span class="dot" onclick="currentSlide(2)"></span>
+  <span class="dot" onclick="currentSlide(3)"></span>
+</div>
 
   </div>
 
