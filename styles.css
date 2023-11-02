@@ -82,3 +82,16 @@ p{
 .header .row{
      margin-top: 70px;
 }
+.col-4 {
+flex-basis: 25%;
+padding: 10px;
+min-width: 200px;
+margin-bottom: 50px;
+}
+.col-4 img{
+width: 10px;
+
+}
+#celtic{
+    width: 300px;
+}
