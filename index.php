@@ -38,7 +38,7 @@ include "dbconnect.php"
         <div class="col-2">
            <h1>Voetbal van de grond af! <br>een nieuwe wereld!</h1> 
            <P>What is Lorem Ipsum? Lorem Ipsum is simply dummy text of the printing and typesetting industry.</P>
-           <a href=""class="button">bekijk collectie</a>
+           <a href="producten.php"class="button">bekijk collectie</a>
         </div>
         <div class="col-2">
         </div>
