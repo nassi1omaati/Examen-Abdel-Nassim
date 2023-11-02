@@ -50,33 +50,8 @@ include "dbconnect.php"
 
 <!-- hier beginnen we aan de footer -->
 
-    <div class="footer">
-        <div class="container">
-            <div class="row">
-                <div class="footer-col-1">
-                    <h3>Kiqqs</h3>
-                    <p>Voetbal van de grond af! een nieuwe wereld!</p>
-                </div>
-                <div class="footer-col-2">
-                    <img src="img/logo1.png">
-                    <p>Voetbal van de grond af! een nieuwe wereld!</p>
-                </div>
-                <div class="footer-col-3">
-                    <h3>Kiqqs</h3>
-                    <ul>
-                       <li>Algemene voorwaarden</li> 
-                       <li>Privacy verklaring</li> 
-                       <li>Home</li> 
-                       <li>producten</li> 
-                       <li>over ons</li>
-                       <li>contact</li> 
- 
-
-                    </ul>
-                </div>
-            </div>
-        </div>
-    </div>
+<div class="footer">
+  <p>Footer</p>
 
 
 </body>
