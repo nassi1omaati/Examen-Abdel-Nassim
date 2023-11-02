@@ -26,7 +26,7 @@ include "dbconnect.php"
         </div>
         <nav>
             <ul>
-            <li><a class="category" href="producten.php">Producten</a></li>
+            <li><a class="category" href="#">Producten</a></li>
             <li><a class="category" href="#">over ons</a></li>
             <li><a class="category" href="#">contact</a></li>
             <li><a class="category" href="#">account</a></li>
