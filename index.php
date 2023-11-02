@@ -54,7 +54,7 @@ include "dbconnect.php"
         <div class="container">
             <div class="row">
                 <div class="footer-col-1">
-                    <h2>Kiqqs</h2>
+                    <h3>Kiqqs</h3>
                     <p>Voetbal van de grond af! een nieuwe wereld!</p>
                 </div>
                 <div class="footer-col-2">
@@ -62,7 +62,7 @@ include "dbconnect.php"
                     <p>Voetbal van de grond af! een nieuwe wereld!</p>
                 </div>
                 <div class="footer-col-3">
-                    <h2>Kiqqs</h2>
+                    <h3>Kiqqs</h3>
                     <ul>
                        <li>Algemene voorwaarden</li> 
                        <li>Privacy verklaring</li> 
