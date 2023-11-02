@@ -40,6 +40,11 @@ p{
     align-items: center;
     flex-wrap: wrap;
     justify-content: space-around; 
+    flex-direction: row;
+}
+
+#speller{
+    width: 600px;
 }
 .col-2{
     flex-basis: 50%;

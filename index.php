@@ -42,7 +42,7 @@ include "dbconnect.php"
         </div>
         <div class="col-2">
         </div>
-            <img src="img/voetballer.png">
+            <img id="speller" src="img/voetballer.png">
         </div>
      </div>
     </div>
