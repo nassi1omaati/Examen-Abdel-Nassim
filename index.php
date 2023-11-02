@@ -22,7 +22,7 @@ include "dbconnect.php"
     <div class="container">
     <div class="navbar">
         <div class="logo1">
-        <img src="img/Logo1.png" width="250">
+       <a href="index.php"> <img src="img/Logo1.png" width="250"></a>
         </div>
         <nav>
             <ul>
