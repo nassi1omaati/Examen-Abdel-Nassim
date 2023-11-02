@@ -26,7 +26,7 @@ include "dbconnect.php"
         </div>
         <nav>
             <ul>
-            <li><a class="category" href="#">Producten</a></li>
+            <li><a class="category" href="producten.php">Producten</a></li>
             <li><a class="category" href="#">over ons</a></li>
             <li><a class="category" href="#">contact</a></li>
             <li><a class="category" href="#">account</a></li>
@@ -42,11 +42,21 @@ include "dbconnect.php"
         </div>
         <div class="col-2">
         </div>
-            <img id="speller" src="img/voetballer.png">
+            
         </div>
      </div>
     </div>
  </div>
+ 
+  <div class="smal-container">
+    <h2>producten</h2>
+     <div class="row"></div>
+     <div class="col_4">
+        <img src="" >
+        <h4></h4>
+     </div>
+
+  </div>
 
 
 
