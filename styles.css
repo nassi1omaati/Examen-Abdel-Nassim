@@ -65,6 +65,7 @@ p{
     margin: 30px 0;
     border-radius: 30px;
     transition: 1s;
+    text-decoration: none;
 }
 .button:hover{
     background: #eda7a7;

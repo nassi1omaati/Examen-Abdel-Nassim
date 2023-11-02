@@ -28,8 +28,8 @@ include "dbconnect.php"
             <ul>
             <li><a class="category" href="#">Producten</a></li>
             <li><a class="category" href="#">over ons</a></li>
+            <li><a class="category" href="#">contact</a></li>
             <li><a class="category" href="#">account</a></li>
-            <li><a class="category" href="#">Contact</a></li>
             </ul>
         </nav>
         <img src="img/cart.png" width="30px" height="30px">
@@ -40,8 +40,9 @@ include "dbconnect.php"
            <P>What is Lorem Ipsum? Lorem Ipsum is simply dummy text of the printing and typesetting industry.</P>
            <a href=""class="button">bekijk collectie</a>
         </div>
-        <div class="col-2"></div>
-            <img src="img/crissyboy.png">
+        <div class="col-2">
+        </div>
+            <img src="img/voetballer.png">
         </div>
      </div>
     </div>
