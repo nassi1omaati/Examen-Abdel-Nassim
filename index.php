@@ -51,7 +51,7 @@ include "dbconnect.php"
 <!-- hier beginnen we aan de footer -->
 
 <div class="footer">
-  <p>Footer</p>
+  <a href="index.php"> <img src="img/Logo1.png" width="250"></a>
 
 
 </body>
