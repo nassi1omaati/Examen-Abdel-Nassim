@@ -23,7 +23,7 @@ include "dbconnect.php"
     <div class="container">
     <div class="navbar">
         <div class="logo1">
-        <img src="img/Logo1.png" width="250">
+        <a href="index.php"> <img src="img/Logo1.png" width="250"></a>
         </div>
         <nav>
             <ul>
@@ -62,19 +62,20 @@ include "dbconnect.php"
     <div class="text">Caption Three</div>
   </div>
 
-  <!-- Next and previous buttons -->
+  <!-- Next and previous buttons - keep them for navigation if needed -->
   <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
   <a class="next" onclick="plusSlides(1)">&#10095;</a>
 </div>
 <br>
 
-<!-- The dots/circles -->
+<!-- The dots/circles - keep them for navigation if needed -->
 <div style="text-align:center">
   <span class="dot" onclick="currentSlide(1)"></span>
   <span class="dot" onclick="currentSlide(2)"></span>
   <span class="dot" onclick="currentSlide(3)"></span>
 </div>
 </div>
+
 
 
 
