@@ -44,37 +44,29 @@ include "dbconnect.php"
  
  <div class="slideshow-container">
   <!-- Full-width images with number and caption text -->
-  <div class="mySlides">
+  <div class="mySlides" style="display: block;">
     <div class="numbertext">1 / 3</div>
     <img src="img/celtic1.avif" style="width:100%">
-    <div class="text">Caption Text</div>
+    <div class="text">Caption Text 1</div>
   </div>
 
   <div class="mySlides">
     <div class="numbertext">2 / 3</div>
     <img src="img/celtic2.avif" style="width:100%">
-    <div class="text">Caption Two</div>
+    <div class="text">Caption Two 2</div>
   </div>
 
   <div class="mySlides">
     <div class="numbertext">3 / 3</div>
     <img src="img/celtic3.avif" style="width:100%">
-    <div class="text">Caption Three</div>
+    <div class="text">Caption Three 3</div>
   </div>
 
   <!-- Next and previous buttons - keep them for navigation if needed -->
   <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
   <a class="next" onclick="plusSlides(1)">&#10095;</a>
 </div>
-<br>
 
-<!-- The dots/circles - keep them for navigation if needed -->
-<div style="text-align:center">
-  <span class="dot" onclick="currentSlide(1)"></span>
-  <span class="dot" onclick="currentSlide(2)"></span>
-  <span class="dot" onclick="currentSlide(3)"></span>
-</div>
-</div>
 
 
 
