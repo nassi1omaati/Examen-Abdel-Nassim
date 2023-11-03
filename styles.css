@@ -188,13 +188,12 @@ width: 10px;
 
 /* hier komt de css voor de footer */
 
-.footer{   
+#footer{   
   position: relative;
   left: 0;
   bottom: 0;
   width: 100%;
   height: auto;
   background: radial-gradient(#fff, #fff0f0);
-  color: white;
   text-align: center;
 }
