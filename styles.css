@@ -22,10 +22,6 @@ nav ul li{
     text-decoration: none;
     color: #555;
 }
-/* a{
-    text-decoration: none;
-    color: #555;
-} */
 p{
     color: #555;
 }
@@ -101,13 +97,6 @@ width: 10px;
     padding-left: 25px;
     padding-right: 25px;
 }
-
-.footer{
-    background: #000;
-    color: #8a8a8a;
-    padding: 60px o 20px;
-}
-
 
 * {box-sizing:border-box}
 
@@ -195,4 +184,17 @@ width: 10px;
 @keyframes fade {
   from {opacity: .4}
   to {opacity: 1}
+}
+
+/* hier komt de css voor de footer */
+
+.footer{   
+  position: relative;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  height: auto;
+  background: radial-gradient(#fff, #fff0f0);
+  color: white;
+  text-align: center;
 }

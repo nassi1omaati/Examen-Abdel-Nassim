@@ -52,7 +52,7 @@ include "dbconnect.php"
     <h2>producten</h2>
      <div class="row"></div>
      <div class="col_4">
-        <a href='celtic.php'><<img  id="celtic" src="img/celtic1.avif" ></a>
+        <a href='celtic.php'><img  id="celtic" src="img/celtic1.avif" ></a>
         <h4>celtic kit</h4>
         <p>€90</p>
     
