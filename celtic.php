@@ -14,6 +14,7 @@ include "dbconnect.php"
     <link rel="stylesheet" href="styles.css">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi" crossorigin="anonymous">
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@500;600;700&display=swap" rel="stylesheet">
 </head>
 
@@ -47,19 +48,16 @@ include "dbconnect.php"
   <div class="mySlides" style="display: block;">
     <div class="numbertext">1 / 3</div>
     <img src="img/celtic1.avif" style="width:100%">
-    <div class="text">Caption Text 1</div>
   </div>
 
   <div class="mySlides">
     <div class="numbertext">2 / 3</div>
     <img src="img/celtic2.avif" style="width:100%">
-    <div class="text">Caption Two 2</div>
   </div>
 
   <div class="mySlides">
     <div class="numbertext">3 / 3</div>
     <img src="img/celtic3.avif" style="width:100%">
-    <div class="text">Caption Three 3</div>
   </div>
 
   <!-- Next and previous buttons - keep them for navigation if needed -->
@@ -68,7 +66,46 @@ include "dbconnect.php"
 </div>
 
 
+<div class="accordion accordion-flush" id="accordionFlushExample">
+      <div class="accordion-item">
+        <h2 class="accordion-header" id="flush-headingOne">
+          <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseOne" aria-expanded="false" aria-controls="flush-collapseOne">
+            beschrijfing
+          </button>
+        </h2>
+        <div id="flush-collapseOne" class="accordion-collapse collapse" aria-labelledby="flush-headingOne" data-bs-parent="#accordionFlushExample">
+          <div class="accordion-body">
+          EEN OPVALLEND CELTIC FC THUISSHIRT DAT JOUW PASSIE WEERSPIEGELT, GEMAAKT MET GERECYCLED MATERIAAL.
+De hoofdingang van Celtic Park, gekroond met dat kenmerkende glas-in-loodraam, heeft in de loop der jaren vele Celtic FC-legendes in 'het paradijs' verwelkomd. Tegenwoordig is dat bijzondere glaswerk binnen in het stadion te vinden, en vormt het de inspiratie voor het design van de strepen op dit adidas thuisshirt. Het shirt houdt je comfortabel met vochtafvoerend AEROREADY en zet met een geborduurde badge en een Celtic-logo je voetbalpassie in de schijnwerpers.
 
+Dit met 100% gerecyclede materialen gemaakte product vertegenwoordigt slechts één van onze oplossingen om te helpen een einde te maken aan plastic afval.
+            
+            </div>
+        </div>
+      </div>
+
+      <div class="accordion-item">
+        <h2 class="accordion-header" id="flush-headingTwo">
+          <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseTwo" aria-expanded="false" aria-controls="flush-collapseTwo">
+            sociaal-cultureel
+          </button>
+        </h2>
+        <div id="flush-collapseTwo" class="accordion-collapse collapse" aria-labelledby="flush-headingTwo" data-bs-parent="#accordionFlushExample">
+          <div class="accordion-body"> </div>
+        </div>
+      </div>
+      <div class="accordion-item">
+        <h2 class="accordion-header" id="flush-headingThree">
+          <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseThree" aria-expanded="false" aria-controls="flush-collapseThree">
+            sociaaleconomisch
+          </button>
+        </h2>
+        <div id="flush-collapseThree" class="accordion-collapse collapse" aria-labelledby="flush-headingThree" data-bs-parent="#accordionFlushExample">
+          <div class="accordion-body"> </div>
+        </div>
+      </div>
+    </div>
+    
 
 
 
