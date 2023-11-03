@@ -188,12 +188,25 @@ width: 10px;
 
 /* hier komt de css voor de footer */
 
-#footer{   
+.footer{   
   position: relative;
   left: 0;
   bottom: 0;
   width: 100%;
   height: auto;
-  background: radial-gradient(#fff, #fff0f0);
-  text-align: center;
+  background-color: #fff4f4;
+}
+.footer1{
+    list-style-position: inside;
+    text-align: left;
+}
+.footer2{
+    list-style-position: inside;
+    text-align: right;
+}
+.footer3{
+    text-align: center;
+}
+.footerline{
+    max-width: 100%;
 }
