@@ -43,26 +43,24 @@ include "dbconnect.php"
  </div>
  
  <div class="slideshow-container">
-
   <!-- Full-width images with number and caption text -->
-  <div class="mySlides fade">
-    <div class="numbertext">1 / 4</div>
+  <div class="mySlides">
+    <div class="numbertext">1 / 3</div>
     <img src="img/celtic1.avif" style="width:100%">
     <div class="text">Caption Text</div>
   </div>
 
-  <div class="mySlides fade">
-    <div class="numbertext">2 / 4</div>
+  <div class="mySlides">
+    <div class="numbertext">2 / 3</div>
     <img src="img/celtic2.avif" style="width:100%">
     <div class="text">Caption Two</div>
   </div>
 
-  <div class="mySlides fade">
-    <div class="numbertext">3 / 4</div>
+  <div class="mySlides">
+    <div class="numbertext">3 / 3</div>
     <img src="img/celtic3.avif" style="width:100%">
     <div class="text">Caption Three</div>
   </div>
-
 
   <!-- Next and previous buttons -->
   <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
@@ -76,8 +74,8 @@ include "dbconnect.php"
   <span class="dot" onclick="currentSlide(2)"></span>
   <span class="dot" onclick="currentSlide(3)"></span>
 </div>
+</div>
 
-  </div>
 
 
 
