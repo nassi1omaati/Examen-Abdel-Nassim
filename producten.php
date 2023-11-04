@@ -48,17 +48,16 @@ include "dbconnect.php"
     </div>
  </div>
  
-  <div class="smal-container">
+ <div class="smal-container">
     <h2>producten</h2>
-     <div class="row"></div>
-     <div class="col_4">
-        <a href='celtic.php'><img  id="celtic" src="img/celtic1.avif"></a>
-        <h4>celtic kit</h4>  
-     </div>
-
-  </div>
-
-
+    <div class="row"></div>
+    <div class="col_4">
+        <a href='celtic.php' class="product-box">
+            <img id="celtic" src="img/celtic1.avif">
+            <h4>$90</h4>
+        </a>
+    </div>
+</div>
 
 </body>
 
