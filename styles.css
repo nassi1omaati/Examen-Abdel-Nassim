@@ -195,18 +195,23 @@ width: 10px;
   width: 100%;
   height: auto;
   background-color: #fff4f4;
+  margin-bottom: 20px;
 }
 .footer1{
     list-style-position: inside;
-    text-align: left;
+    width: 33%;
+    display: block;
 }
+
 .footer2{
-    list-style-position: inside;
-    text-align: right;
+    width: 33%;
+    display: block;
+
 }
 .footer3{
-    text-align: center;
+    list-style-position: inside;
+    width: 33%;
+    display: block;
+
 }
-.footerline{
-    max-width: 100%;
-}
+

@@ -58,17 +58,22 @@ include "dbconnect.php"
 </div>  
     <div class="footer1">
         <h1>Links</h1>
-
-    <div class="footer2">
+        <div>   
+            Osdorpplein
+            0612345678
+            postcode 1012AB
+            Amsterdam
+    </div>
+    <div class="footer3">
     <h1>locatie</h1>
-    <ul>
-            <li>Osdorpplein</li>
-            <li>0612345678</li>
-            <li>postcode 1012AB</li>
-            <li>Amsterdam</li>
-    </ul>
+    <div>   
+            Osdorpplein
+            0612345678
+            postcode 1012AB
+            Amsterdam
+    </div>
         </div>
-        <div class="footer3">
+        <div class="footer2">
         <a href="index.php"> <img src="img/Logo1.png" width="150"></a>
         </div>
     </div>
