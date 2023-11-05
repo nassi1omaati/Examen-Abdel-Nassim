@@ -27,9 +27,9 @@ include "dbconnect.php"
         <nav>
             <ul>
             <li><a class="category" href="producten.php">Producten</a></li>
-            <li><a class="category" href="#">over ons</a></li>
-            <li><a class="category" href="#">contact</a></li>
-            <li><a class="category" href="#">account</a></li>
+            <li><a class="category" href="over_ons.php">Over ons</a></li>
+            <li><a class="category" href="#">Contact</a></li>
+            <li><a class="category" href="#">Account</a></li>
             </ul>
         </nav>
         <img src="img/cart.png" width="30px" height="30px">
@@ -58,7 +58,37 @@ include "dbconnect.php"
         </a>
     </div>
 </div>
+<!-- hier beginnen we aan de footer -->
+<footer id="footer-main">
+  <div class="footer-grid">
+        <section class="footer-1">
+          <h4>Diensten</h4>
+            <a class="category" href="producten.php">Producten</a>
+            <br>
+            <a class="category" href="#">Over ons </a>
+            <br>
+            <a class="category" href="#">Account</a>
+            <br> 
+            <a class="category" href="#">Contact</a>
+        </section>
 
+       <section class="footer-2">
+          <a href="index.php"> <img src="img/Logo1.png" width="150"></a>
+        </section>
+
+       <section class="footer-3">
+         <h4>Informatie </h4>
+           <a>Osdorpplein</a>
+           <a>0612345678</a>
+           <a>1012AB Amsterdam</a>
+           <a>kiqqs@gmail.com</a>
+
+       </section>
+
+       
+   </div>
+  
+</footer>
 </body>
 
    

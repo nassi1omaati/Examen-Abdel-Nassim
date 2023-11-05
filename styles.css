@@ -192,8 +192,7 @@ transform: translateY(-5px);
 }
 
 /* hier komt de css voor de footer */
-
-.footer{   
+.footer-grid{   
   position: relative;
   left: 0;
   bottom: 0;
@@ -201,24 +200,35 @@ transform: translateY(-5px);
   height: auto;
   background-color: #fff4f4;
   margin-bottom: 20px;
+  border-style: inset;
+  
+
 }
-.footer1{
+.footer-1{
     list-style-position: inside;
     width: 33%;
     display: block;
 }
 
-.footer2{
+.footer-2{
     width: 33%;
     display: block;
-
 }
-.footer3{
+.footer-3{
     list-style-position: inside;
     width: 33%;
     display: block;
 
 }
+.footer-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    grid-auto-rows: auto;
+    grid-gap: 10px;
+    margin: 0 auto;
+    max-width: 100%;
+    padding-left: 180px;
+  }
 .col_4 {
   display: flex;
   flex-direction: column;
