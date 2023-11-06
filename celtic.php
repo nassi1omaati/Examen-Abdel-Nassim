@@ -31,7 +31,7 @@ include "dbconnect.php"
             <ul>
             <li><a class="category" href="producten.php">Producten</a></li>
             <li><a class="category" href="#">over ons</a></li>
-            <li><a class="category" href="#">contact</a></li>
+            <li><a class="category" href="contact.php">contact</a></li>
             <li><a class="category" href="#">account</a></li>
             </ul>
         </nav>

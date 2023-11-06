@@ -28,7 +28,7 @@ include "dbconnect.php"
             <ul>
             <li><a class="category" href="producten.php">Producten</a></li>
             <li><a class="category" href="over_ons.php">Over ons</a></li>
-            <li><a class="category" href="#">Contact</a></li>
+            <li><a class="category" href="contact.php">Contact</a></li>
             <li><a class="category" href="#">Account</a></li>
             </ul>
         </nav>
@@ -69,7 +69,7 @@ include "dbconnect.php"
             <br>
             <a class="category" href="#">Account</a>
             <br> 
-            <a class="category" href="#">Contact</a>
+            <a class="category" href="contact.php">Contact</a>
         </section>
 
        <section class="footer-2">
