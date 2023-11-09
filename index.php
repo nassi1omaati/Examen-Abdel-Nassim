@@ -27,20 +27,15 @@ include "dbconnect.php"
         </div>
         <nav>
           <ul>
-          <li><a class="category" href="producten.php">Producten</a></li>
-        <li><a class="category" href="over_ons.php">over ons</a></li>
-        <li><a class="category" href="contact.php">contact</a></li>
-        <li><a class="category" href="#">account</a></li>
+            <li><a class="category" href="producten.php">Producten</a></li>
+            <li><a class="category" href="over_ons.php">Over ons</a></li>
+            <li><a class="category" href="contact.php">Contact</a></li>
+            <li><a class="category" href="#">Account</a></li>
           </ul>
         </nav>
-        <a href="cart.js"><img src="img/cart.png"  width="30px" height="30px" ></a>
-     </div>
-     <div class="row">
-
-        <img src="img/cart.png" width="30px" height="30px">
+        <a href="cart.php"><img src="img/cart.png"  width="30px" height="30px" ></a>
       </div>
       <div class="row">
-
         <div class="col-2">
           <h1>Voetbal van de grond af! <br>een nieuwe wereld!</h1>
           <P>What is Lorem Ipsum? Lorem Ipsum is simply dummy text of the printing and typesetting industry.</P>
