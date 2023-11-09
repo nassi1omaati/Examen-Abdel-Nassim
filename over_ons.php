@@ -29,14 +29,26 @@ include "dbconnect.php"
     <nav>
         <ul>
         <li><a class="category" href="producten.php">Producten</a></li>
-        <li><a class="category" href="over_ons.php">over ons</a></li>
-        <li><a class="category" href="contact.php">contact</a></li>
-        <li><a class="category" href="#">account</a></li>
+        <li><a class="category" href="over_ons.php">Over ons</a></li>
+        <li><a class="category" href="contact.php">Contact</a></li>
+        <li><a class="category" href="#">Account</a></li>
         </ul>
     </nav>
     <a href="cart.php"><img src="img/cart.png"  width="30px" height="30px" ></a>
  </div>
-
+ <section class="over-ons">
+    <div class="over">
+    <img src="img/over_ons.png" class="foto">
+      <div class="text">
+        <h2>Over ons</h2>
+          <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Expedita natus ad sed harum itaque ullam enim quas, veniam accusantium, quia animi id eos adipisci iusto molestias asperiores explicabo cum vero atque amet corporis! Soluta illum facere consequuntur magni. 
+             Ullam dolorem repudiandae cumque voluptate consequatur consectetur, eos provident necessitatibus reiciendis corrupti!</p>
+        <div class="data">
+        <a href="contact.php" class="button_over">Contacteren</a>
+        </div>
+      </div>
+    </div>
+  </section>
         
     </div>
  </div>
@@ -50,11 +62,11 @@ include "dbconnect.php"
           <h4>Diensten</h4>
             <a class="category" href="producten.php">Producten</a>
             <br>
-            <a class="category" href="#">Over ons </a>
+            <a class="category" href="over_ons.php">Over ons </a>
             <br>
             <a class="category" href="#">Account</a>
             <br> 
-            <a class="category" href="#">Contact</a>
+            <a class="category" href="contact.php">Contact</a>
         </section>
 
        <section class="footer-2">
