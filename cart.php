@@ -22,9 +22,9 @@
         <nav>
             <ul>
             <li><a class="category" href="producten.php">Producten</a></li>
-            <li><a class="category" href="#">over ons</a></li>
-            <li><a class="category" href="contact.php">contact</a></li>
-            <li><a class="category" href="#">account</a></li>
+        <li><a class="category" href="over_ons.php">over ons</a></li>
+        <li><a class="category" href="contact.php">contact</a></li>
+        <li><a class="category" href="#">account</a></li>
             </ul>
         </nav>
         <a href="cart.php"><img src="img/cart.png"  width="30px" height="30px" ></a>

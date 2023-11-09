@@ -29,7 +29,7 @@ include "dbconnect.php"
     <nav>
         <ul>
         <li><a class="category" href="producten.php">Producten</a></li>
-        <li><a class="category" href="#">over ons</a></li>
+        <li><a class="category" href="over_ons.php">over ons</a></li>
         <li><a class="category" href="contact.php">contact</a></li>
         <li><a class="category" href="#">account</a></li>
         </ul>

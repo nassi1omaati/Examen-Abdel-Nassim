@@ -27,10 +27,10 @@ include "dbconnect.php"
         </div>
         <nav>
           <ul>
-            <li><a class="category" href="producten.php">Producten</a></li>
-            <li><a class="category" href="over_ons.php">Over ons</a></li>
-            <li><a class="category" href="contact.php">Contact</a></li>
-            <li><a class="category" href="#">Account</a></li>
+          <li><a class="category" href="producten.php">Producten</a></li>
+        <li><a class="category" href="over_ons.php">over ons</a></li>
+        <li><a class="category" href="contact.php">contact</a></li>
+        <li><a class="category" href="#">account</a></li>
           </ul>
         </nav>
         <a href="cart.js"><img src="img/cart.png"  width="30px" height="30px" ></a>
