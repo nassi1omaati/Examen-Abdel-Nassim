@@ -44,8 +44,60 @@ session_start(); // Start or resume the session
      </div>
     </div>
  </div>
- 
- <div class="slideshow-container">
+
+
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Product Listing</title>
+</head>
+<body>
+<?php
+// Mock product details
+$product1 = array("id" => 1, "name" => "Celtic FC Thuisshirt", "price" => 49.99, "sizes" => array("XS","S", "M", "L","XL"));
+$products = array($product1);
+?>
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Product Listing</title>
+</head>
+<body>
+    <h2>Product Listing</h2>
+    <?php
+    foreach ($products as $product) {
+      echo '<div class = ></div>';
+        echo '<div style="display: flex; align-items: center;">';
+        echo '<div style="flex: 1;">';
+        echo '<h3>' . $product['name'] . '</h3>';
+        echo '<p>Price: $' . $product['price'] . '</p>';
+        echo '<form action="cart.php" method="post">';
+        echo '<input type="hidden" name="product_id" value="' . $product['id'] . '">';
+
+        // Size dropdown
+        echo '<label for="size">Size:1 </label>';
+        echo '<select name="size" id="size">';
+        foreach ($product['sizes'] as $size) {
+            echo '<option value="' . $size . '">' . $size . '</option>';
+        }
+        echo '</select>';
+
+        // Add to Cart button
+        echo '<input type="submit" value="Add to Cart">';
+        echo '</form>';
+        echo '</div>';
+
+      
+    }
+    ?>
+    <div class="slideshow-container">
   <!-- Full-width images with number and caption text -->
   <div class="mySlides" style="display: block;">
     <div class="numbertext">1 / 3</div>
@@ -66,42 +118,14 @@ session_start(); // Start or resume the session
   <a class="prev" onclick="plusSlides(-1)" style="background-color:gray">&#10094; </a>
   <a class="next" onclick="plusSlides(1)"style="background-color:gray">&#10095;</a>
 </div>
+</body>
+</html>
 
-
-
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Product Listing</title>
-</head>
-<body>
-    <h2>Product Listing</h2>
-
-    <?php
-    // Mock product details
-    $product1 = array("id" => 1, "name" => "Celtic FC Thuisshirt", "price" => 49.99);
-    // $product2 = array("id" => 2, "name" => "Another Product", "price" => 29.99);
-
-    $products = array($product1);
-
-    foreach ($products as $product) {
-        echo '<div>';
-        echo '<h3>' . $product['name'] . '</h3>';
-        echo '<p>Price: $' . $product['price'] . '</p>';
-        echo '<form action="cart.php" method="post">';
-        echo '<input type="hidden" name="product_id" value="' . $product['id'] . '">';
-        echo '<input type="submit" value="Add to Cart">';
-        echo '</form>';
-        echo '</div>';
-    }
-    ?>
 </body>
 </html>
 
 
-
+<div class="bottom-element">
 <div class="accordion accordion-flush" id="accordionFlushExample">
       <div class="accordion-item">
         <h2 class="accordion-header" id="flush-headingOne">
@@ -140,6 +164,7 @@ Dit met 100% gerecyclede materialen gemaakte product vertegenwoordigt slechts é
           <div class="accordion-body"> </div>
         </div>
       </div>
+    </div>
     </div>
     
 
