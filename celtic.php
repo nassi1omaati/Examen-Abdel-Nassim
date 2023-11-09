@@ -82,9 +82,9 @@ session_start(); // Start or resume the session
     <?php
     // Mock product details
     $product1 = array("id" => 1, "name" => "Celtic FC Thuisshirt", "price" => 49.99);
-    $product2 = array("id" => 2, "name" => "Another Product", "price" => 29.99);
+    // $product2 = array("id" => 2, "name" => "Another Product", "price" => 29.99);
 
-    $products = array($product1, $product2);
+    $products = array($product1);
 
     foreach ($products as $product) {
         echo '<div>';

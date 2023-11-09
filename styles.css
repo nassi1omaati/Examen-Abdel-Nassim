@@ -100,10 +100,12 @@ p {
   min-width: 200px;
   margin-bottom: 50px;
   transition: transform 0.5s;
+  
 }
 
 .col-4 img {
   width: 10px;
+  
 
 }
 
@@ -129,7 +131,7 @@ p {
 
 /* Slideshow container */
 .slideshow-container {
-  max-width: 1000px;
+  max-width: 450px;
   position: relative;
   margin: auto;
 }
