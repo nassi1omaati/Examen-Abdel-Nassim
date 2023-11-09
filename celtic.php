@@ -35,7 +35,7 @@ include "dbconnect.php"
             <li><a class="category" href="#">account</a></li>
             </ul>
         </nav>
-        <img src="img/cart.png" width="30px" height="30px">
+        <a href="cart.js"><img src="img/cart.png"  width="30px" height="30px" ></a>
      </div>
    
             
@@ -66,6 +66,47 @@ include "dbconnect.php"
   <a class="next" onclick="plusSlides(1)"style="background-color:gray">&#10095;</a>
 </div>
 
+<div class="product-details">
+    <!-- Andere productinformatie -->
+    <button class="add-to-cart" data-product-id="1">Add to Cart</button>
+</div>
+<script src="index.js"></script>
+<script>
+document.addEventListener("DOMContentLoaded", function() {
+    const addToCartButtons = document.querySelectorAll(".add-to-cart");
+
+    addToCartButtons.forEach(button => {
+        button.addEventListener("click", function() {
+            const productId = this.getAttribute("data-product-id");
+            // Voeg de product-ID toe aan het winkelwagenobject in JavaScript
+            addToCart(productId);
+        });
+    });
+    
+    // Andere JavaScript-functionaliteit
+});
+</script>
+
+<?php
+include "dbconnect.php";
+
+if ($_SERVER["REQUEST_METHOD"] == "POST") {
+    if (isset($_POST["cart"])) {
+        $cartItems = json_decode($_POST["cart"]);
+
+        foreach ($cartItems as $productId) {
+            $sql = "INSERT INTO cart (user_id, product_id) VALUES (1, $productId)"; // Pas dit aan volgens je databasestructuur en gebruikerssessie
+
+            if ($conn->query($sql) === TRUE) {
+                // Item is met succes aan de database toegevoegd
+            } else {
+                // Er is een fout opgetreden
+                echo "Error: " . $sql . "<br>" . $conn->error;
+            }
+        }
+    }
+}
+?>
 
 <div class="accordion accordion-flush" id="accordionFlushExample">
       <div class="accordion-item">

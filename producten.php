@@ -32,7 +32,7 @@ include "dbconnect.php"
             <li><a class="category" href="#">Account</a></li>
             </ul>
         </nav>
-        <img src="img/cart.png" width="30px" height="30px">
+        <a href="cart.js"><img src="img/cart.png"  width="30px" height="30px" ></a>
      </div>
      <div class="row">
         <div class="col-2">
