@@ -19,36 +19,29 @@ include "dbconnect.php"
 </head>
 
 <body>
-    <div class="header">
+<div class="header">
 
-    <div class="container">
-    <div class="navbar">
-        <div class="logo1">
-       <a href="index.php"> <img src="img/Logo1.png" width="250"></a>
-        </div>
-        <nav>
-            <ul>
-            <li><a class="category" href="producten.php">Producten</a></li>
-            <li><a class="category" href="over_ons.php">Over ons</a></li>
-            <li><a class="category" href="contact.php">Contact</a></li>
-            <li><a class="category" href="#">Account</a></li>
-            </ul>
-        </nav>
-        <a href="cart.js"><img src="img/cart.png"  width="30px" height="30px" ></a>
-     </div>
-     <div class="row">
-        <div class="col-2">
-           <h1>Voetbal van de grond af! <br>een nieuwe wereld!</h1> 
-           <P>What is Lorem Ipsum? Lorem Ipsum is simply dummy text of the printing and typesetting industry.</P>
-           <a href="producten.php"class="button">bekijk collectie</a>
-        </div>
-        <div class="col-2">
-        </div>
-            <img id="speler" src="img/voetballer.png">
-        </div>
-     </div>
+<div class="container">
+<div class="navbar">
+    <div class="logo1">
+    <a href="index.php"> <img src="img/Logo1.png" width="250"></a>
+    </div>
+    <nav>
+        <ul>
+        <li><a class="category" href="producten.php">Producten</a></li>
+        <li><a class="category" href="#">over ons</a></li>
+        <li><a class="category" href="contact.php">contact</a></li>
+        <li><a class="category" href="#">account</a></li>
+        </ul>
+    </nav>
+    <a href="cart.php"><img src="img/cart.png"  width="30px" height="30px" ></a>
+ </div>
+
+        
     </div>
  </div>
+</div>
+</div>
 
 <!-- hier beginnen we aan de footer -->
 <footer id="footer-main">

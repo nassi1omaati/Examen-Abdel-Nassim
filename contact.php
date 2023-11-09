@@ -63,7 +63,7 @@ include "dbconnect.php"
             </div>
 
         </div>
-<<<<<<< HEAD
+
         <nav>
             <ul>
             <li><a class="category" href="producten.php">Producten</a></li>
@@ -76,26 +76,30 @@ include "dbconnect.php"
      </div>
     ]
  </div>
-=======
->>>>>>> e2b2585070d36051e30053c23b76cc58549063d1
 
-        <!-- hier beginnen we aan de footer -->
-        <footer id="footer-main">
-            <div class="footer-grid">
-                <section class="footer-1">
-                    <h4>Diensten</h4>
-                    <a class="category" href="producten.php">Producten</a>
-                    <br>
-                    <a class="category" href="#">Over ons </a>
-                    <br>
-                    <a class="category" href="#">Account</a>
-                    <br>
-                    <a class="category" href="#">Contact</a>
-                </section>
+ <div class="header">
 
-                <section class="footer-2">
-                    <a href="index.php"> <img src="img/Logo1.png" width="150"></a>
-                </section>
+<div class="container">
+<div class="navbar">
+    <div class="logo1">
+    <a href="index.php"> <img src="img/Logo1.png" width="250"></a>
+    </div>
+    <nav>
+        <ul>
+        <li><a class="category" href="producten.php">Producten</a></li>
+        <li><a class="category" href="#">over ons</a></li>
+        <li><a class="category" href="contact.php">contact</a></li>
+        <li><a class="category" href="#">account</a></li>
+        </ul>
+    </nav>
+    <a href="cart.php"><img src="img/cart.png"  width="30px" height="30px" ></a>
+ </div>
+
+        
+    </div>
+ </div>
+</div>
+</div>
 
                 <section class="footer-3">
                     <h4>Informatie </h4>

@@ -1,5 +1,6 @@
 <?php
-include "dbconnect.php"
+include "dbconnect.php";
+session_start(); // Start or resume the session
 ?>
 <script src="index.js"></script>
 
@@ -35,7 +36,7 @@ include "dbconnect.php"
             <li><a class="category" href="#">account</a></li>
             </ul>
         </nav>
-        <a href="cart.js"><img src="img/cart.png"  width="30px" height="30px" ></a>
+        <a href="cart.php"><img src="img/cart.png"  width="30px" height="30px" ></a>
      </div>
    
             
@@ -66,53 +67,46 @@ include "dbconnect.php"
   <a class="next" onclick="plusSlides(1)"style="background-color:gray">&#10095;</a>
 </div>
 
-<div class="product-details">
-    <!-- Andere productinformatie -->
-    <button class="add-to-cart" data-product-id="1">Add to Cart</button>
-</div>
-<script src="index.js"></script>
-<script>
-document.addEventListener("DOMContentLoaded", function() {
-    const addToCartButtons = document.querySelectorAll(".add-to-cart");
 
-    addToCartButtons.forEach(button => {
-        button.addEventListener("click", function() {
-            const productId = this.getAttribute("data-product-id");
-            // Voeg de product-ID toe aan het winkelwagenobject in JavaScript
-            addToCart(productId);
-        });
-    });
-    
-    // Andere JavaScript-functionaliteit
-});
-</script>
 
-<?php
-include "dbconnect.php";
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Product Listing</title>
+</head>
+<body>
+    <h2>Product Listing</h2>
 
-if ($_SERVER["REQUEST_METHOD"] == "POST") {
-    if (isset($_POST["cart"])) {
-        $cartItems = json_decode($_POST["cart"]);
+    <?php
+    // Mock product details
+    $product1 = array("id" => 1, "name" => "Celtic FC Thuisshirt", "price" => 49.99);
+    $product2 = array("id" => 2, "name" => "Another Product", "price" => 29.99);
 
-        foreach ($cartItems as $productId) {
-            $sql = "INSERT INTO cart (user_id, product_id) VALUES (1, $productId)"; // Pas dit aan volgens je databasestructuur en gebruikerssessie
+    $products = array($product1, $product2);
 
-            if ($conn->query($sql) === TRUE) {
-                // Item is met succes aan de database toegevoegd
-            } else {
-                // Er is een fout opgetreden
-                echo "Error: " . $sql . "<br>" . $conn->error;
-            }
-        }
+    foreach ($products as $product) {
+        echo '<div>';
+        echo '<h3>' . $product['name'] . '</h3>';
+        echo '<p>Price: $' . $product['price'] . '</p>';
+        echo '<form action="cart.php" method="post">';
+        echo '<input type="hidden" name="product_id" value="' . $product['id'] . '">';
+        echo '<input type="submit" value="Add to Cart">';
+        echo '</form>';
+        echo '</div>';
     }
-}
-?>
+    ?>
+</body>
+</html>
+
+
 
 <div class="accordion accordion-flush" id="accordionFlushExample">
       <div class="accordion-item">
         <h2 class="accordion-header" id="flush-headingOne">
           <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseOne" aria-expanded="false" aria-controls="flush-collapseOne">
-            beschrijfing
+            beschrijving
           </button>
         </h2>
         <div id="flush-collapseOne" class="accordion-collapse collapse" aria-labelledby="flush-headingOne" data-bs-parent="#accordionFlushExample">

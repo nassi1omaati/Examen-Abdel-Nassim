@@ -33,15 +33,14 @@ include "dbconnect.php"
             <li><a class="category" href="#">Account</a></li>
           </ul>
         </nav>
-<<<<<<< HEAD
         <a href="cart.js"><img src="img/cart.png"  width="30px" height="30px" ></a>
      </div>
      <div class="row">
-=======
+
         <img src="img/cart.png" width="30px" height="30px">
       </div>
       <div class="row">
->>>>>>> e2b2585070d36051e30053c23b76cc58549063d1
+
         <div class="col-2">
           <h1>Voetbal van de grond af! <br>een nieuwe wereld!</h1>
           <P>What is Lorem Ipsum? Lorem Ipsum is simply dummy text of the printing and typesetting industry.</P>
