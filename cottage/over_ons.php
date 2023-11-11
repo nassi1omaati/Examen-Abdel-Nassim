@@ -1,8 +1,8 @@
 <?php
 include "includes/database.php";
 include "includes/functions.php";
-// include "header.php";
-include "menu-1.php";
+include "header.php";
+// include "menu-1.php";
 ?>
 
 
