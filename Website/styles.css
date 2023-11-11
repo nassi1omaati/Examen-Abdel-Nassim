@@ -67,7 +67,6 @@ p {
   line-height: 60px;
   margin: 25px 0;
   font: 25px Arial, sans-serif;
-
 }
 
 .button {
@@ -87,7 +86,6 @@ p {
 
 .header {
   background: radial-gradient(#fff, #fff0f0);
-
 }
 
 .header .row {
@@ -104,12 +102,10 @@ p {
 
 .col-4 img {
   width: 10px;
-
 }
 
 .col_4 :hover {
   transform: translateY(-5px);
-
 }
 
 #celtic {

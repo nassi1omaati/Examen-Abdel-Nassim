@@ -1,0 +1,126 @@
+/* 
+voor de styles wordt gebruik gemaakt van bootstrap deze wordt extern geladen in index.php.
+meer informatie over bootstrap vind je hier https://getbootstrap.com/docs/5.1/getting-started/introduction/ 
+*/
+.over-ons {
+  height: 100vh;
+  width: 100%;
+  padding: 90px 0;
+  background: #ffffff;
+}
+
+.foto {
+  height: auto;
+  width: 302px;
+}
+
+.over {
+  width: 1130px;
+  max-width: 85%;
+  margin: 0 auto;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+}
+
+.text {
+  width: 540px;
+  color: #000000;
+}
+
+.text h2 {
+  font-size: 90px;
+  font-weight: 600;
+  margin-bottom: 10px;
+  color: #000000;
+  text-decoration: none;
+
+}
+
+.text h5 {
+  font-size: 22px;
+  font-weight: 500;
+  margin-bottom: 20px;
+  color: #000000;
+  text-decoration: none;
+
+}
+
+span {
+  color: #000000;
+}
+
+.text p {
+  font-size: 18px;
+  line-height: 25px;
+  letter-spacing: 1px;
+  color: #000000;
+  text-decoration: none;
+
+}
+
+.data {
+  margin-top: 30px;
+}
+
+.button_over {
+  font-size: 18px;
+  background: #000000;
+  color: #fff;
+  text-decoration: none;
+  border: none;
+  padding: 8px 25px;
+  border-radius: 6px;
+  transition: 0.5s;
+  text-decoration: none;
+}
+
+.button_over:hover {
+  background: #fff;
+  border: 1px solid #000000;
+}
+
+/* hier komt de css voor de footer */
+.footer-grid {
+  position: relative;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  height: auto;
+  background-color: #000;
+  margin-bottom: 20px;
+  border-style: inset;
+  color: #fff;
+  text-decoration: none;
+}
+
+.footer-1 {
+  list-style-position: inside;
+  width: 33%;
+  display: block;
+  color: #fff;
+  text-decoration: none;
+  text-decoration-color: #fff;
+}
+
+.footer-2 {
+  width: 33%;
+  display: block;
+}
+
+.footer-3 {
+  list-style-position: inside;
+  width: 33%;
+  display: block;
+
+}
+
+.footer-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  grid-auto-rows: auto;
+  grid-gap: 10px;
+  margin: 0 auto;
+  max-width: 100%;
+  padding-left: 180px;
+}

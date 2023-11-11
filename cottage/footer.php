@@ -1,10 +1,40 @@
 <!-- footer -->
-<section>
-    <div class="container">
-        Made by the pro developer Nassim Omaati
-    </div>
-</section>
+<style>
+<?php include 'style.css'; ?>
+</style>
+<head>
+</head>
+<!-- hier beginnen we aan de footer -->
+<footer id="footer-main">
+    <div class="footer-grid">
+      <section class="footer-1">
+        <h4>Diensten</h4>
+        <a class="category" href="producten.php">Producten</a>
+        <br>
+        <a class="category" href="#">Over ons </a>
+        <br>
+        <a class="category" href="#">Account</a>
+        <br>
+        <a class="category" href="#">Contact</a>
+      </section>
 
+      <section class="footer-2">
+        <a href="index.php"> <img src="img/Logo1.png" width="150"></a>
+      </section>
+
+      <section class="footer-3">
+        <h4>Informatie </h4>
+        <a>Osdorpplein</a>
+        <a>0612345678</a>
+        <a>1012AB Amsterdam</a>
+        <a>kiqqs@gmail.com</a>
+
+      </section>
+
+
+    </div>
+
+  </footer>
     <!-- Optional JavaScript -->
     <!-- jQuery first, then Popper.js, then Bootstrap JS -->
     <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
