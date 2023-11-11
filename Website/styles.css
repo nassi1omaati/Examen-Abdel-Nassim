@@ -100,12 +100,10 @@ p {
   min-width: 200px;
   margin-bottom: 50px;
   transition: transform 0.5s;
-  
 }
 
 .col-4 img {
   width: 10px;
-  
 
 }
 
@@ -131,9 +129,9 @@ p {
 
 /* Slideshow container */
 .slideshow-container {
-  max-width: 450px;
+  max-width: 1000px;
   position: relative;
-  margin-right:400px ;
+  margin: auto;
 }
 
 /* Hide the images by default */
@@ -331,20 +329,11 @@ input[type=submit] {
 input[type=submit]:hover {
   background-color: #45a049;
   background: #45a049;
-}F
+}
 
 .container {
   border-radius: 5px;
   background-color: #fff4f4;
   padding: 20px;
 }
-#size {
-  width: 70px; /* Adjust the width as needed */
-}
-.bottom-element {
-  position: fixed; /* Fixed position to keep it at the bottom even when scrolling */
-  bottom: 0; /* Align the bottom of the element to the bottom of the page */
-  width: 100%; /* Make it take the full width of the page */
-  background-color: #f1f1f1; /* Set a background color (optional) */
-  padding: 10px; /* Add some padding for better visibility (optional) */
-}
+/* hierin komt de styling voor de shopping cart */
