@@ -9,17 +9,15 @@
     <div class="footer-grid">
       <section class="footer-1">
         <h4>Diensten</h4>
+        
         <a class="category" href="producten.php">Producten</a>
-        <br>
         <a class="category" href="#">Over ons </a>
-        <br>
         <a class="category" href="#">Account</a>
-        <br>
         <a class="category" href="#">Contact</a>
       </section>
 
       <section class="footer-2">
-        <a href="index.php"> <img src="img/Logo1.png" width="150"></a>
+        <a href="index.php"> <img src="images/Logo1.png" width="150"></a>
       </section>
 
       <section class="footer-3">
