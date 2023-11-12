@@ -40,7 +40,7 @@ if(isset($_POST["additions"])){
 
 ?>
 <section>
-<div class="container mt-4 mb-4 bg-light border border-info">
+<div class="container mt-4 mb-4 bg-white border border-white">
     <!-- het formulier vullen met de juiste velden -->
     <form name="calculate" method="post" action="huisjes.php?cottageID=<?php echo $cottageID;?>">
         <div class="row px-4 py-4">
@@ -62,37 +62,12 @@ if(isset($_POST["additions"])){
                             <input type="number" class="form-control" name="numberChilds" id="numberChilds" placeholder="Aantal kinderen" aria-label="Aantal kinderen" value="<?php echo $numberChilds; ?>">
                         </div>
             </div>
-            <div class="col">
-                <h5 class="pb-2">Selecteer extra's (prijs per persoon per dag)</h5>
-                    <?php
-                        //alle additions dynamisch neerzetten
-                        foreach($tblAdditions as $addition) { 
-
-                            if(isset($POST["AmountAdd" . $addition["addition_id"]])){
-                                $AmountAdd[$addition["addition_name"]] = $POST["AmountAdd" . $addition["addition_id"]];
-                            } else {
-                                $AmountAdd[$addition["addition_name"]] = 0;
-                            }?>
-
-                        <div class="row">
-                          <div class="col-9">
-                                <div class="form-check form-switch">
-                                    <input class="form-check-input" type="checkbox" role="switch" id="<?php echo $addition["addition_id"];?>" value="<?php echo $addition["addition_id"];?>" name="additions[]" <?php if(in_array($addition["addition_id"], $ArrAdditions)){echo "checked"; $selAdditions[$addition["addition_name"]]= $addition["addition_price"];}?>>
-                                    <label class="form-check-label" for="<?php echo $addition["addition_id"];?>"><?php echo $addition["addition_name"];?>  (&euro; <?php echo  $addition["addition_price"];?>)</label>
-                                </div>
-                            </div>
-                            <div class="col-3">
-                                <input type="number" class="form-control" id="AmountAdd_<?php echo $addition["addition_id"]; ?>" name="AmountAdd_<?php echo $addition["addition_id"]; ?>" value="<?php echo $AmountAdd[$addition["addition_name"]];?>">
-                            </div>
-                        </div>
-                    <?php } //end foreach ?>
-
-            </div>
+           
         </div>
         <div class="col-12 mb-4">
             <div class="d-grid d-md-flex justify-content-md-end">
                 <!--submit het formulier calculate -->
-                <button class="btn btn-lg btn-info me-md-2 text-light" type="submit" value="calcPrice" name="calculate">Bereken</button>
+                <button class="btn btn-dark text-light" type="submit" value="calcPrice" name="calculate">Omrekenen</button>
             </div>
         </div>
     </form>
@@ -118,11 +93,7 @@ if($calcPrice == true){
         $counter++;
     }
 
-    //als er geen additions geselecteerd zijn
-    if(count($selAdditions) == 0) {
-        $additionNames = "Geen extra's geselecteerd!";
-    }
-
+   
    //prijzen ophalen $tblCottage is gevuld in huisjes.php dus ik had het ook daar kunnen aanmaken, check of dit handig is
     $CottagePriceA = $tblCottage["cottage_price_a"];
     $CottagePriceC = $tblCottage["cottage_price_c"];
@@ -158,10 +129,7 @@ if($calcPrice == true){
                             <td>Prijs kinderen (<?php echo $numberChilds ."x &euro;".  number_format($CottagePriceC, 2) ."x". $numberNights; ?>)</td>
                             <td>&euro; <?php echo  number_format($totalPriceC, 2); ?></td>
                         </tr>
-                        <tr>
-                            <td>Prijs extra's (<?php echo $additionNames;?>):</td>
-                            <td>&euro; <?php echo  number_format($totalAdditions, 2); ?></td>
-                        </tr>
+                      
                     </tbody>
                     <tfoot>
                         <td><strong>Totaal</strong></td>
