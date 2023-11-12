@@ -1,5 +1,9 @@
 <?php
-include "dbconnect.php"
+include "includes/database.php";
+include "includes/functions.php";
+include "header.php";
+// include "menu-1.php";
+// include 'style.css'; 
 ?>
 
 
@@ -10,43 +14,29 @@ include "dbconnect.php"
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Kiqqs</title>
-    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="style.css">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@500;600;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@500;600;700&display=swap" rel="stylesheet"> 
 
 </head>
 
 <body>
-    <div class="header">
-
-        <div class="container">
-            <div class="navbar">
-                <div class="logo1">
-                    <a href="index.php"> <img src="img/Logo1.png" width="250"></a>
-                </div>
-                <nav>
-                    <ul>
-                        <li><a class="category" href="producten.php">Producten</a></li>
-                        <li><a class="category" href="over_ons.php">Over ons</a></li>
-                        <li><a class="category" href="contact.php">Contact</a></li>
-                        <li><a class="category" href="#">Account</a></li>
-                    </ul>
-                </nav>
-                <img src="img/cart.png" width="30px" height="30px">
-            </div>
-            <h3>Contact Form</h3>
+            <h3 class="form">Contact Form</h3>
 
             <div class="container">
                 <form action="/action_page.php">
                     <label for="fname">Voornaam</label>
-                    <input type="text" id="fname" name="firstname" placeholder="Je voornaam...">
+                    <input type="text" id="fname" name="firstname" placeholder="Voornaam...">
 
                     <label for="lname">Achternaam</label>
-                    <input type="text" id="lname" name="lastname" placeholder="Je achternaam...">
+                    <input type="text" id="lname" name="lastname" placeholder="Achternaam...">
 
-                    <label for="lname">Achternaam</label>
-                    <input type="text" id="lname" name="lastname" placeholder="Je E-mailadres...">
+                    <label for="lname">E-mailadres</label>
+                    <input type="text" id="lname" name="lastname" placeholder="E-mailadres...">
+
+                    <label for="lname">Telefoonnummer</label>
+                    <input type="text" id="lname" name="lastname" placeholder="Telefoonnummer">
 
                     <label for="country">voornaamwoorden</label>
                     <select id="country" name="country">
@@ -63,57 +53,11 @@ include "dbconnect.php"
             </div>
 
         </div>
+<?php
+ include "footer.php";
 
-        <nav>
-            <ul>
-            <li><a class="category" href="producten.php">Producten</a></li>
-            <li><a class="category" href="over_ons.php">Over ons</a></li>
-            <li><a class="category" href="contact.php">Contact</a></li>
-            <li><a class="category" href="#">acc</a></li>
-            </ul>
-        </nav>
-        <a href="cart.js"><img src="img/cart.png"  width="30px" height="30px" ></a>
-     </div>
-    ]
- </div>
-
- <div class="header">
-
-<div class="container">
-<div class="navbar">
-    <div class="logo1">
-    <a href="index.php"> <img src="img/Logo1.png" width="250"></a>
-    </div>
-    <nav>
-        <ul>
-        <li><a class="category" href="producten.php">Producten</a></li>
-        <li><a class="category" href="over_ons.php">over ons</a></li>
-        <li><a class="category" href="contact.php">contact</a></li>
-        <li><a class="category" href="#">account</a></li>
-        </ul>
-    </nav>
-    <a href="cart.php"><img src="img/cart.png"  width="30px" height="30px" ></a>
- </div>
-
-        
-    </div>
- </div>
-</div>
-</div>
-
-                <section class="footer-3">
-                    <h4>Informatie </h4>
-                    <a>Osdorpplein</a>
-                    <a>0612345678</a>
-                    <a>1012AB Amsterdam</a>
-                    <a>kiqqs@gmail.com</a>
-
-                </section>
-
-
-            </div>
-
-        </footer>
+?>
+     
 
 </body>
 
