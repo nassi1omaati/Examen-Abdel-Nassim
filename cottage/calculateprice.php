@@ -48,7 +48,7 @@ if(isset($_POST["additions"])){
                 <h2>Bereken prijs</h2>
             </div>
             <div class="col">
-                    <h5 class="pb-2">Aantal nachten en personen</h5>
+                    <h5 class="pb-2">Hoeveel vierkante kilometer en soort gras</h5>
                         <div class="input-group mb-3">
                             <span class="input-group-text">Hoeveel m²</span>
                             <input type="number" class="form-control" name="numberNights" id="numberNights" placeholder="Aantal nachten" aria-label="Aantal nachten" value="<?php echo $numberNights; ?>">
@@ -115,7 +115,7 @@ if($calcPrice == true){
                     <table class="table">
                     <thead>
                         <tr>
-                        <th scope="col">Omschrijving</th>
+                        <th scope="col">Informatie</th>
                         <th scope="col">Prijs</th>
                         </tr>
                     </thead>

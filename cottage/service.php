@@ -23,10 +23,10 @@ include "header.php";
                             <h5 class="card-title"><?php echo $veld['veld_name']; ?></h5> <!-- maak naam dynamisch -->
                             <p class="card-text"><?php echo $veld['veld_descr']; ?></p>
                                 <ul class="list-group list-group-flush">
-                                <li class="list-group-item">€<?php echo $veld ['veld_price_a']; ?> per persoon</li><!-- maak prijs volwassenen dynamisch -->
-                                    <li class="list-group-item">€<?php echo $veld ['veld_price_c']; ?> per kind</li><!-- maak prijs kinderen dynamisch -->
+                                <li class="list-group-item">€<?php echo $veld ['veld_price_a']; ?> Grasveld</li><!-- maak prijs volwassenen dynamisch -->
+                                    <li class="list-group-item">€<?php echo $veld ['veld_price_c']; ?> Kunstgrasveld</li><!-- maak prijs kinderen dynamisch -->
                                 </ul>
-                                <a href="huisjes.php?veldID=<?php echo $veld["veld_id"]; ?>" class="btn btn-secondary mt-2">Lees meer...</a><!-- maak href dynamisch -->
+                                <a href="huisjes.php?veldID=<?php echo $veld["veld_id"]; ?>" class="btn btn-dark text-light">Meer informatie...</a><!-- maak href dynamisch -->
                             </div>
                         </div>
                     </div>

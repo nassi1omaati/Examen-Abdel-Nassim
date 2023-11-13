@@ -22,16 +22,16 @@ if ( isset( $_GET["veldID"]) ) {
                 <div id="carouselExampleControls" class="carousel slide pointer-event" data-bs-ride="carousel">
                 <div class="carousel-inner">
                     <div class="carousel-item">
-                    <img src=<?php echo "images/".$tblVeld["veld_img"] ?> class="d-block w-100" alt="ijmuiden.jpg"><!--src en alt dynamisch maken -->
+                    <img src=<?php echo "images/".$tblVeld["veld_img"] ?> class="d-block w-100" alt="cruyff.jpg"><!--src en alt dynamisch maken -->
                     </div>
                     <div class="carousel-item active">
-                    <img src=<?php echo "images/".$tblVeld["veld_img2"] ?> class="d-block w-100" alt="ijmuiden-strand.jpg"><!--src en alt dynamisch maken -->
+                    <img src=<?php echo "images/".$tblVeld["veld_img2"] ?> class="d-block w-100" alt="cruyff1.jpg"><!--src en alt dynamisch maken -->
                     </div>
                     <div class="carousel-item">
-                    <img src=<?php echo "images/".$tblVeld["veld_img3"] ?> class="d-block w-100" alt="ijmuiden-hottub.jpg"><!--src en alt dynamisch maken -->
+                    <img src=<?php echo "images/".$tblVeld["veld_img3"] ?> class="d-block w-100" alt="cruyff2.jpg"><!--src en alt dynamisch maken -->
                     </div>
                     <div class="carousel-item">
-                    <img src=<?php echo "images/".$tblVeld["veld_img4"] ?> class="d-block w-100" alt="ijmuiden-haard.jpg"><!--src en alt dynamisch maken -->
+                    <img src=<?php echo "images/".$tblVeld["veld_img4"] ?> class="d-block w-100" alt="cruyff3.jpg"><!--src en alt dynamisch maken -->
                     </div>
                 </div>
                 <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="prev">
