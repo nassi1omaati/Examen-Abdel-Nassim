@@ -33,11 +33,11 @@ include "header.php";
           <P>Sinds 2022 levert kiqqs kwaliteit.</P>
           <a href="service.php" class="button">Onze services</a>
         </div>
-        <div class="col-2">
-        </div>
         <img id="veld" src="images/voetbalveld.png">
 
-        <img id="veld" src="images/voetbalveld.png">
+        <div class="col-2">
+        </div>
+
       </div>
     </div>
   </div>

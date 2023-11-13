@@ -12,10 +12,9 @@ include 'style.css';
       <section class="footer-1">
         <h4>Diensten</h4>
         
-        <a class="category" href="producten.php">Producten</a>
-        <a class="category" href="#">Over ons </a>
-        <a class="category" href="#">Account</a>
-        <a class="category" href="#">Contact</a>
+        <a class="category" href="service.php">Service</a>
+        <a class="category" href="over_ons.php">Over ons </a>
+        <a class="category" href="contact.php">Contact</a>
       </section>
 
       <section class="footer-2">
