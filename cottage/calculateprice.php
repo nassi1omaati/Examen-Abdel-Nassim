@@ -12,8 +12,8 @@ $additionNames = "";
 $AmountAdd = [];
 
 //variabelen voor de prijzen
-$CottagePriceA = $tblCottage["cottage_price_a"];
-$CottagePriceC = $tblCottage["cottage_price_c"];
+$VeldPriceA = $tblVeld["veld_price_a"];
+$VeldPriceC = $tblVeld["veld_price_c"];
 
 //Checken of velden van de form calculate gesubmit zijn en iemand de prijs wil berekenen
 //en natuurlijk variabelen de juiste waarde geven
@@ -42,7 +42,7 @@ if(isset($_POST["additions"])){
 <section>
 <div class="container mt-4 mb-4 bg-white border border-white">
     <!-- het formulier vullen met de juiste velden -->
-    <form name="calculate" method="post" action="huisjes.php?cottageID=<?php echo $cottageID;?>">
+    <form name="calculate" method="post" action="huisjes.php?veldID=<?php echo $veldID;?>">
         <div class="row px-4 py-4">
             <div class="col-12 mb-4">
                 <h2>Bereken prijs</h2>
@@ -94,14 +94,14 @@ if($calcPrice == true){
     }
 
    
-   //prijzen ophalen $tblCottage is gevuld in huisjes.php dus ik had het ook daar kunnen aanmaken, check of dit handig is
-    $CottagePriceA = $tblCottage["cottage_price_a"];
-    $CottagePriceC = $tblCottage["cottage_price_c"];
+   //prijzen ophalen $tblVeld is gevuld in huisjes.php dus ik had het ook daar kunnen aanmaken, check of dit handig is
+    // $VeldPriceA = $tblVeld["veld_price_a"];
+    // $VeldPriceC = $tblVeld["veld_price_c"];
 
     //prijs voor volwassenen
-    $totalPriceA =  ($numberAdults * $numberNights) * $CottagePriceA;
+    $totalPriceA =  ($numberAdults * $numberNights) * $VeldPriceA;
     //CHECK prijs voor kinderen, berekening nog maken!
-    $totalPriceC =  ($numberChilds * $numberNights) * $CottagePriceC;
+    $totalPriceC =  ($numberChilds * $numberNights) * $VeldPriceC;
     //CHECK alle additions * aantal dagen/nachten nog berekenen
     $totalAdditions =  $totalAdditions * $numberNights;
 
@@ -110,7 +110,7 @@ if($calcPrice == true){
     <div class="container">
         <div class="row">
             <div class="col">
-                <div class="alert alert-primary" role="alert">
+                <div class="alert alert-white" role="alert">
                     <h5>Berekende prijs</h5>
                     <table class="table">
                     <thead>
@@ -122,11 +122,11 @@ if($calcPrice == true){
                     <tbody>
                         <tr>
                             <!-- CHECK het is eigenlijk wel handig om de prijs goed op te schrijven met een , en twee cijfers achter de komma, ik hebt het hier alvast neergezet maar moet nog wel de functie FormatNumber() afmaken, dit geeft nu natuurlijk een foutmelding... -->
-                            <td>Prijs echt gras (<?php echo $numberAdults ."x &euro;".  number_format($CottagePriceA, 2) ."x". $numberNights; ?>)</td>
+                            <td>Prijs echt gras (<?php echo $numberAdults ."x &euro;".  number_format($VeldPriceA, 2) ."x". $numberNights; ?>)</td>
                             <td>&euro; <?php echo $totalPriceA ?></td>
                         </tr>
                         <tr>
-                            <td>Prijs kunst gras (<?php echo $numberChilds ."x &euro;".  number_format($CottagePriceC, 2) ."x". $numberNights; ?>)</td>
+                            <td>Prijs kunst gras (<?php echo $numberChilds ."x &euro;".  number_format($VeldPriceC, 2) ."x". $numberNights; ?>)</td>
                             <td>&euro; <?php echo  number_format($totalPriceC, 2); ?></td>
                         </tr>
                       

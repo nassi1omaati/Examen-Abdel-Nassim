@@ -1,5 +1,4 @@
-
-<nav class="navbar navbar-light" style="background-color: #fff;">
+<nav class="navbar navbar-expand-lg navbar-light bg-white">
     <div class="container-fluid">
         <a class="navbar-brand" href="index.php"><img src="images/Logo1.png" width="150"></a>
         <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
@@ -17,19 +16,18 @@
                         <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
                         <?php
                         //haal alle huisjes op uit de database, gebruik hiervoor de functie getData() geef aan getData de juiste argumenten mee
-                        //1. de sql statement ("SELECT * FROM `cottages`") en 2 of je alle rijen (fetchAll) of maar een rij als resultaat terug wil zien.
+                        //1. de sql statement ("SELECT * FROM `velden`") en 2 of je alle rijen (fetchAll) of maar een rij als resultaat terug wil zien.
                         //In dit geval is het al juist voor je ingevuld
-                        $tblCottages = getData("SELECT * FROM `cottages`", "fetchAll");
+                        $tblVeld = getData("SELECT * FROM `velden`", "fetchAll");
 
-                        //echo "<pre>";
-                        //echo var_dump($tblCottages);
+                    
 
-                        //maak hieronder een forach loop om door de array $tblCottages te lopen
+                        //maak hieronder een forach loop om door de array $tblVeld te lopen
                         //zet hier de juiste code neer voor de foreach loop
-                        foreach ($tblCottages as $cottage)  {
+                        foreach ($tblVeld as $veld)  {
                         ?>
-                            <li><a class="dropdown-item" href="huisjes.php?cottageID=<?php echo $cottage["cottage_id"];?>"><?php echo $cottage["cottage_name"];?></a></li>
-                            <!--gebruik jij niet de naam $cottage in je foreach loop pas de code op regel 22 dan aan! -->
+                            <li><a class="dropdown-item" href="huisjes.php?veldID=<?php echo $veld["veld_id"];?>"><?php echo $veld["veld_name"];?></a></li>
+                            <!--gebruik jij niet de naam $veld in je foreach loop pas de code op regel 22 dan aan! -->
                         <?php
                         } //end foreachloop alvast voor je neergezet ?>
                         </ul>

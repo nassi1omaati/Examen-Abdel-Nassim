@@ -1,6 +1,6 @@
 <?php
     //gegevens van de faciliteiten bij dit huisje uit de database halen, fetch want je krijgt maar een rij terug...
-    $sql = "SELECT facilities.facility_name FROM `cottages_facilities` INNER JOIN facilities ON facilities.facility_id=cottages_facilities.facility_id WHERE cottages_facilities.cottage_id = $cottageID"; //$cottageID is de variabele met de ID van de huisjes, check: heb ik hem zo genoemd?
+    $sql = "SELECT facilities.facility_name FROM `cottages_facilities` INNER JOIN facilities ON facilities.facility_id=cottages_facilities.facility_id WHERE cottages_facilities.cottage_id = $veldID"; //$veldID is de variabele met de ID van de huisjes, check: heb ik hem zo genoemd?
     //echo $sql;
     $tblFacilities = getData($sql, "fetchAll");
 ?>
