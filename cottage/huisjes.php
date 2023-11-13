@@ -53,27 +53,7 @@ if ( isset( $_GET["cottageID"]) ) {
 </section>
 
 <section>
-    <div class="container mt-4 bg-light">
-        <div class="row  px-4 py-4">
-            <div class="col">
-            <?php include "facilities.php"; ?>
-            </div>
 
-            <div class="col">
-                <h4>Prijzen (per persoon per nacht)</h4>
-                    <ul class="list-group list-group-flush">
-                            <li class="list-group-item">Volwassenen: &euro; <?php echo $cottage ['cottage_price_a']; ?></li>
-                            <li class="list-group-item">Kinderen: &euro; <?php echo $cottage ['cottage_price_c']; ?></li>
-                    </ul>
-            </div>
-
-            <div class="col">
-            <?php include "additions.php";
-             ?>
-            </div>
-        </div>
-    </div>
-</section>
 
 <?php
  include "calculateprice.php";

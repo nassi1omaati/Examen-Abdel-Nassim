@@ -2,7 +2,7 @@
 $servername = "localhost";
 $username = "root"; //vul hier de juiste username van je database in
 $password = ""; //vul hier het juiste paswoord van je database in
-$dbname = "cottages"; //heb je de database ook echt zo genoemd?
+$dbname = "kiqqs"; //heb je de database ook echt zo genoemd?
 
 try {
   $conn = new PDO("mysql:host=$servername;dbname=$dbname", $username, $password);
