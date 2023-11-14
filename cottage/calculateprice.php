@@ -50,15 +50,15 @@ if(isset($_POST["additions"])){
             <div class="col">
                     <h5 class="pb-2">Hoeveel vierkante kilometer en soort gras</h5>
                         <div class="input-group mb-3">
-                            <span class="input-group-text">Hoeveel m²</span>
+                            <span class="input-group-text">    Hoeveel m²     </span>
                             <input type="number" class="form-control" name="numberFields" id="numberFields" placeholder="Aantal nachten" aria-label="Aantal nachten" value="<?php echo $numberFields; ?>">
                         </div>
                         <div class="input-group mb-3">
-                            <span class="input-group-text">Echt gras</span>
+                            <span class="input-group-text">Echt gras velden</span>
                             <input type="number" class="form-control" name="numberEchtgras" id="numberEchtgras" placeholder="Aantal volwassenen" aria-label="Aantal volwassenen" value="<?php echo $numberEchtgras; ?>">
                         </div>
                         <div class="input-group mb-3">
-                            <span class="input-group-text">Kunst gras</span>
+                            <span class="input-group-text">Kunst gras velden</span>
                             <input type="number" class="form-control" name="numberKunstgras" id="numberKunstgras" placeholder="Aantal kinderen" aria-label="Aantal kinderen" value="<?php echo $numberKunstgras; ?>">
                         </div>
             </div>
