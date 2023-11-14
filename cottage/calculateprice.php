@@ -2,9 +2,9 @@
 
 //haal de ingevulde velden van het formulier op
 $calcPrice = false;
-$numberNights = 0;
-$numberAdults = 0;
-$numberChilds = 0;
+$numberFields = 0;
+$numberEchtgras = 0;
+$numberKunstgras = 0;
 $ArrAdditions = [];
 $selAdditions = [];
 $totalAdditions = 0;
@@ -21,16 +21,16 @@ if(isset($_POST["calculate"])){
     $calcPrice = true;
 }
 
-if(isset($_POST["numberNights"])){
-    $numberNights = $_POST["numberNights"];
+if(isset($_POST["numberFields"])){
+    $numberFields = $_POST["numberFields"];
 }
 
-if(isset($_POST["numberAdults"])){
-    $numberAdults = $_POST["numberAdults"];
+if(isset($_POST["numberEchtgras"])){
+    $numberEchtgras = $_POST["numberEchtgras"];
 }
 
-if(isset($_POST["numberChilds"])){
-    $numberChilds = $_POST["numberChilds"];
+if(isset($_POST["numberKunstgras"])){
+    $numberKunstgras = $_POST["numberKunstgras"];
 }
 
 if(isset($_POST["additions"])){
@@ -50,16 +50,16 @@ if(isset($_POST["additions"])){
             <div class="col">
                     <h5 class="pb-2">Hoeveel vierkante kilometer en soort gras</h5>
                         <div class="input-group mb-3">
-                            <span class="input-group-text">Hoeveel m²</span>
-                            <input type="number" class="form-control" name="numberNights" id="numberNights" placeholder="Aantal nachten" aria-label="Aantal nachten" value="<?php echo $numberNights; ?>">
+                            <span class="input-group-text">    Hoeveel m²     </span>
+                            <input type="number" class="form-control" name="numberFields" id="numberFields" placeholder="Aantal nachten" aria-label="Aantal nachten" value="<?php echo $numberFields; ?>">
                         </div>
                         <div class="input-group mb-3">
-                            <span class="input-group-text">Echt gras</span>
-                            <input type="number" class="form-control" name="numberAdults" id="numberAdults" placeholder="Aantal volwassenen" aria-label="Aantal volwassenen" value="<?php echo $numberAdults; ?>">
+                            <span class="input-group-text">Echt gras velden</span>
+                            <input type="number" class="form-control" name="numberEchtgras" id="numberEchtgras" placeholder="Aantal volwassenen" aria-label="Aantal volwassenen" value="<?php echo $numberEchtgras; ?>">
                         </div>
                         <div class="input-group mb-3">
-                            <span class="input-group-text">Kunst gras</span>
-                            <input type="number" class="form-control" name="numberChilds" id="numberChilds" placeholder="Aantal kinderen" aria-label="Aantal kinderen" value="<?php echo $numberChilds; ?>">
+                            <span class="input-group-text">Kunst gras velden</span>
+                            <input type="number" class="form-control" name="numberKunstgras" id="numberKunstgras" placeholder="Aantal kinderen" aria-label="Aantal kinderen" value="<?php echo $numberKunstgras; ?>">
                         </div>
             </div>
            
@@ -99,11 +99,11 @@ if($calcPrice == true){
     // $VeldPriceC = $tblVeld["veld_price_c"];
 
     //prijs voor volwassenen
-    $totalPriceA =  ($numberAdults * $numberNights) * $VeldPriceA;
+    $totalPriceA =  ($numberEchtgras * $numberFields) * $VeldPriceA;
     //CHECK prijs voor kinderen, berekening nog maken!
-    $totalPriceC =  ($numberChilds * $numberNights) * $VeldPriceC;
+    $totalPriceC =  ($numberKunstgras * $numberFields) * $VeldPriceC;
     //CHECK alle additions * aantal dagen/nachten nog berekenen
-    $totalAdditions =  $totalAdditions * $numberNights;
+    $totalAdditions =  $totalAdditions * $numberFields;
 
     ?>
 <section>
@@ -122,11 +122,11 @@ if($calcPrice == true){
                     <tbody>
                         <tr>
                             <!-- CHECK het is eigenlijk wel handig om de prijs goed op te schrijven met een , en twee cijfers achter de komma, ik hebt het hier alvast neergezet maar moet nog wel de functie FormatNumber() afmaken, dit geeft nu natuurlijk een foutmelding... -->
-                            <td>Prijs echt gras (<?php echo $numberAdults ."x &euro;".  number_format($VeldPriceA, 2) ."x". $numberNights; ?>)</td>
+                            <td>Prijs echt gras veld (<?php echo $numberEchtgras ."x &euro;".  number_format($VeldPriceA, 2) ."x". $numberFields; ?>)</td>
                             <td>&euro; <?php echo $totalPriceA ?></td>
                         </tr>
                         <tr>
-                            <td>Prijs kunst gras (<?php echo $numberChilds ."x &euro;".  number_format($VeldPriceC, 2) ."x". $numberNights; ?>)</td>
+                            <td>Prijs kunst gras veld (<?php echo $numberKunstgras ."x &euro;".  number_format($VeldPriceC, 2) ."x". $numberFields; ?>)</td>
                             <td>&euro; <?php echo  number_format($totalPriceC, 2); ?></td>
                         </tr>
                       
