@@ -17,7 +17,7 @@
                 <li class="nav-item dropdown">
                         <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
                         <?php
-                        //haal alle huisjes op uit de database, gebruik hiervoor de functie getData() geef aan getData de juiste argumenten mee
+                        //haal alle velden op uit de database, gebruik hiervoor de functie getData() geef aan getData de juiste argumenten mee
                         //1. de sql statement ("SELECT * FROM `velden`") en 2 of je alle rijen (fetchAll) of maar een rij als resultaat terug wil zien.
                         //In dit geval is het al juist voor je ingevuld
                         $tblVeld = getData("SELECT * FROM `velden`", "fetchAll");
@@ -28,7 +28,7 @@
                         //zet hier de juiste code neer voor de foreach loop
                         foreach ($tblVeld as $veld)  {
                         ?>
-                            <li><a class="dropdown-item" href="huisjes.php?veldID=<?php echo $veld["veld_id"];?>"><?php echo $veld["veld_name"];?></a></li>
+                            <li><a class="dropdown-item" href="veld.php?veldID=<?php echo $veld["veld_id"];?>"><?php echo $veld["veld_name"];?></a></li>
                             <!--gebruik jij niet de naam $veld in je foreach loop pas de code op regel 22 dan aan! -->
                         <?php
                         } //end foreachloop alvast voor je neergezet ?>

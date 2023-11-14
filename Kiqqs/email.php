@@ -14,7 +14,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
     $lastname = $_POST['lastname'];
     $email = $_POST['email'];
     $phone = $_POST['phone'];
-    $pronouns = $_POST['country'];
+    $pronouns = $_POST['geslacht'];
     $subject = $_POST['subject'];
 
     // Your database insert code (use prepared statements to prevent SQL injection)
@@ -38,7 +38,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
     
             // Content
             $mail->isHTML(true);
-            $mail->Subject = 'Password Reset Instructions';
+            $mail->Subject = 'Contact opnemen';
             $mail->Body    ="Er is zojuist een aanvraag gedaan door  $firstname $lastname $phone.  </a> om contact op te nemen. Het gaat over:<br> $subject";
         
      
@@ -48,7 +48,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
                 echo "Mailer Error: " . $mail->ErrorInfo;
              } else {
                 echo "Uw bericht is verzonden";   
-                header("refresh: 4; url=./index.php");
+                header("refresh: 1; url=./index.php");
                 exit();
              }
 
@@ -59,7 +59,5 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
 
         }
     
-
-
 include "footer.php";
 ?>

@@ -34,11 +34,11 @@ include "header.php";
             <label for="lname">Telefoonnummer</label>
             <input type="text" id="lname" name="phone" placeholder="Telefoonnummer">
 
-            <label for="country">voornaamwoorden</label>
-            <select id="country" name="country">
-                <option value="australia">Hij/Hem</option>
-                <option value="canada">Zij/Haar</option>
-                <option value="usa">Saddam/Hussein</option>
+            <label for="geslacht">voornaamwoorden</label>
+            <select id="geslacht" name="geslacht">
+                <option value="Man">Hij/Hem</option>
+                <option value="Vrouw">Zij/Haar</option>
+                <option value="Anders">Anders</option>
             </select>
             <script src="script.js"></script>
             <label for="subject">Onderwerp</label>

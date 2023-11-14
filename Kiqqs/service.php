@@ -14,7 +14,7 @@ include "header.php";
     <div class="container mt-4">
         <div class="row">
             
-            <!-- als er wel resultaat is of als er niet gefiltert is de huisjes laten zien -->
+            <!-- als er wel resultaat is of als er niet gefiltert is de velden laten zien -->
                 <?php foreach( $tblVeld as $veld ) { ?>
                 <div class="col-12 col-md-4 mb-4 d-flex align-self-stretch">
                     <div class="card">
@@ -26,7 +26,7 @@ include "header.php";
                                 <li class="list-group-item">€<?php echo $veld ['veld_price_a']; ?> Grasveld</li><!-- maak prijs volwassenen dynamisch -->
                                     <li class="list-group-item">€<?php echo $veld ['veld_price_c']; ?> Kunstgrasveld</li><!-- maak prijs kinderen dynamisch -->
                                 </ul>
-                                <a href="huisjes.php?veldID=<?php echo $veld["veld_id"]; ?>" class="btn btn-dark text-light">Meer informatie...</a><!-- maak href dynamisch -->
+                                <a href="veld.php?veldID=<?php echo $veld["veld_id"]; ?>" class="btn btn-dark text-light">Meer informatie...</a><!-- maak href dynamisch -->
                             </div>
                         </div>
                     </div>
