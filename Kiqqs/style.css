@@ -144,11 +144,7 @@ span {
   background: #45a049 !important;
   border: 1px solid #fff;
 }
-/* @media screen and (max-width: 800px){
-  .over-ons, .foto, .over, .text, .text h2, .text h5, .span, .text p, .data, .button_over, .button_over:hover{
-    width: 100%;
-  }
-  } */
+
 /*hier eindigt de css voor de over ons page*/
 
 /* hier komt de css voor de footer */
@@ -225,9 +221,6 @@ input[type=submit]:hover {
   background-color: #45a049;
 }
 
-
-
-
 .form{
   text-align: center;
 }
@@ -245,58 +238,3 @@ input[type=submit]:hover {
   background-color: #45a049;
   background: #45a049;
 }
-#captchaBackground {
-  height: 220px;
-  width: 250px;
-  background-color: #2d3748;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  flex-direction: column;
-}
-
-#captchaHeading {
-  color: white;
-}
-
-#captcha {
-  height: 80%;
-  width: 80%;
-  font-size: 30px;
-  letter-spacing: 3px;
-  margin: auto;
-  display: block;
-}
-
-.center {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-}
-
-#submitButton {
-  margin-top: 2em;
-  margin-bottom: 2em;
-  background-color: #08e5ff;
-  border: 0px;
-  font-weight: bold;
-}
-
-#refreshButton {
-  background-color: #08e5ff;
-  border: 0px;
-  font-weight: bold;
-}
-
-#textBox {
-  height: 25px;
-}
-
-.incorrectCaptcha {
-  color: #FF0000;
-}
-
-.correctCaptcha {
-  color: #7FFF00;
-}
-

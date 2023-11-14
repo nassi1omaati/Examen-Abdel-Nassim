@@ -10,6 +10,8 @@
                 <li class="nav-item"><a class="nav-link active" aria-current="page" href="service.php">Service</a></li>
                 <li class="nav-item"><a class="nav-link active" aria-current="page" href="over_ons.php">Over ons</a></li>
                 <li class="nav-item"><a class="nav-link active" aria-current="page" href="contact.php">Contact</a></li>
+                <li class="nav-item"><a class="nav-link active" aria-current="page" href="registreren.php">Word lid</a></li>
+                <li class="nav-item"><a class="nav-link active" aria-current="page" href="login.php">login</a></li>
 
 
                 <li class="nav-item dropdown">
