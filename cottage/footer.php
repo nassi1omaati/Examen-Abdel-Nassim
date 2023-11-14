@@ -26,7 +26,7 @@ include 'style.css';
         <a>Osdorpplein</a>
         <a>0612345678</a>
         <a>1012AB Amsterdam</a>
-        <a>kiqqs@gmail.com</a>
+        <a>infokiqqs@gmail.com</a>
 
       </section>
 

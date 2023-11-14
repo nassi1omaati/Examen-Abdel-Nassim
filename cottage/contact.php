@@ -21,7 +21,7 @@ include "header.php";
             <h3 class="form">Contact Form</h3>
 
             <div class="container">
-                <form action="/action_page.php">
+                <form action="./email.php" method="post">
                     <label for="fname">Voornaam</label>
                     <input type="text" id="fname" name="firstname" placeholder="Voornaam...">
 
@@ -29,10 +29,10 @@ include "header.php";
                     <input type="text" id="lname" name="lastname" placeholder="Achternaam...">
 
                     <label for="lname">E-mailadres</label>
-                    <input type="text" id="lname" name="lastname" placeholder="E-mailadres...">
+                    <input type="text" id="lname" name="email" placeholder="E-mailadres...">
 
                     <label for="lname">Telefoonnummer</label>
-                    <input type="text" id="lname" name="lastname" placeholder="Telefoonnummer">
+                    <input type="text" id="lname" name="phone" placeholder="Telefoonnummer">
 
                     <label for="country">voornaamwoorden</label>
                     <select id="country" name="country">
