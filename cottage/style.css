@@ -5,10 +5,6 @@ meer informatie over bootstrap vind je hier https://getbootstrap.com/docs/5.1/ge
 body {
   font-family: 'Inter', sans-serif;
 }
-
-
-
-
 .category {
   text-decoration: none;
   color: #555;
@@ -303,3 +299,4 @@ input[type=submit]:hover {
 .correctCaptcha {
   color: #7FFF00;
 }
+
