@@ -7,7 +7,7 @@
         <div class="collapse navbar-collapse" id="navbarSupportedContent">
             <ul class="navbar-nav me-auto mb-2 mb-lg-0">
                 <li class="nav-item"><a class="nav-link active" aria-current="page" href="index.php">Home</a></li>
-                <li class="nav-item"><a class="nav-link active" aria-current="page" href="service.php">service</a></li>
+                <li class="nav-item"><a class="nav-link active" aria-current="page" href="service.php">Service</a></li>
                 <li class="nav-item"><a class="nav-link active" aria-current="page" href="over_ons.php">Over ons</a></li>
                 <li class="nav-item"><a class="nav-link active" aria-current="page" href="contact.php">Contact</a></li>
 
