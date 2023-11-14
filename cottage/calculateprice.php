@@ -50,7 +50,7 @@ if(isset($_POST["additions"])){
             <div class="col">
                     <h5 class="pb-2">Hoeveel vierkante kilometer en soort gras</h5>
                         <div class="input-group mb-3">
-                            <span class="input-group-text">    Hoeveel m²     </span>
+                            <span class="input-group-text">Hoeveel m²</span>
                             <input type="number" class="form-control" name="numberFields" id="numberFields" placeholder="Aantal nachten" aria-label="Aantal nachten" value="<?php echo $numberFields; ?>">
                         </div>
                         <div class="input-group mb-3">
