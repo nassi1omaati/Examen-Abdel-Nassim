@@ -122,11 +122,11 @@ if($calcPrice == true){
                     <tbody>
                         <tr>
                             <!-- CHECK het is eigenlijk wel handig om de prijs goed op te schrijven met een , en twee cijfers achter de komma, ik hebt het hier alvast neergezet maar moet nog wel de functie FormatNumber() afmaken, dit geeft nu natuurlijk een foutmelding... -->
-                            <td>Prijs echt gras (<?php echo $numberEchtgras ."x &euro;".  number_format($VeldPriceA, 2) ."x". $numberFields; ?>)</td>
+                            <td>Prijs echt gras veld (<?php echo $numberEchtgras ."x &euro;".  number_format($VeldPriceA, 2) ."x". $numberFields; ?>)</td>
                             <td>&euro; <?php echo $totalPriceA ?></td>
                         </tr>
                         <tr>
-                            <td>Prijs kunst gras (<?php echo $numberKunstgras ."x &euro;".  number_format($VeldPriceC, 2) ."x". $numberFields; ?>)</td>
+                            <td>Prijs kunst gras veld (<?php echo $numberKunstgras ."x &euro;".  number_format($VeldPriceC, 2) ."x". $numberFields; ?>)</td>
                             <td>&euro; <?php echo  number_format($totalPriceC, 2); ?></td>
                         </tr>
                       
