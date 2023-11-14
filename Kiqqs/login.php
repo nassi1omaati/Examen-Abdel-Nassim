@@ -1,48 +1,16 @@
-
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
-    <style>
-        /* Add some basic styling for a more appealing form */
-        body {
-            font-family: Arial, sans-serif;
-        }
+    <link rel="stylesheet" href="style.css">
 
-        form {
-            max-width: 400px;
-            margin: 20px auto;
-            padding: 15px;
-            border-radius: 5px;
-        }
-
-        label {
-            display: block;
-            margin-bottom: 10px;
-        }
-
-        input {
-            width: 100%;
-            padding: 8px;
-            margin-bottom: 10px;
-            box-sizing: border-box;
-        }
-
-        input[type="submit"] {
-            background-color: #000;
-            color: white;
-            cursor: pointer;
-        }
-
-        input[type="submit"]:hover {
-            background-color: #808080;
-        }
-    </style>
 </head>
+
 <body>
-<div class="container">
+    <div class="container">
         <form action="login.php" method="post">
             <div class="form-group">
                 <input type="email" class="form-control" name="email" placeholder="Email">
@@ -56,9 +24,10 @@
         </form>
     </div>
 </body>
+
 </html>
 
-<?php 
+<?php
 include 'includes/database.php';
 include 'includes/functions.php';
 
@@ -81,6 +50,6 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
         exit();
     } else {
         echo "Ongeldige e-mail of wachtwoord.";
-    } 
+    }
 }
 ?>

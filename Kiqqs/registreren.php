@@ -5,42 +5,8 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Registreren</title>
-    <style>
-        /* Add some basic styling for a more appealing form */
-        body {
-            font-family: Arial, sans-serif;
-        }
+    <link rel="stylesheet" href="style.css">
 
-        form {
-            max-width: 400px;
-            margin: 20px auto;
-            padding: 15px;
-            border: 1px solid #ccc;
-            border-radius: 5px;
-        }
-
-        label {
-            display: block;
-            margin-bottom: 10px;
-        }
-
-        input {
-            width: 100%;
-            padding: 8px;
-            margin-bottom: 10px;
-            box-sizing: border-box;
-        }
-
-        input[type="submit"] {
-            background-color: #4caf50;
-            color: white;
-            cursor: pointer;
-        }
-
-        input[type="submit"]:hover {
-            background-color: #45a049;
-        }
-    </style>
 </head>
 <body>
     <form action="registreren.php" method="post">
@@ -67,8 +33,8 @@
         <label for="accept_commercials">Accepteer e-mail commercials:</label>
         <input type="radio" name="accept_commercials" value="1" required> Ja
         <input type="radio" name="accept_commercials" value="0" required> Nee
-
         <input type="submit" value="Registreren">
+    
     </form>
 </body>
 </html>
