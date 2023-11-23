@@ -30,8 +30,8 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
             $mail->Host = 'smtp.mailtrap.io';
             $mail->SMTPAuth = true;
             $mail->Port = 2525;
-            $mail->Username = '9099e086121c95'; // Replace with your Mailtrap username
-            $mail->Password = '871ba33a0a5aab'; // Replace with your Mailtrap password
+            $mail->Username = '6c5b8bd6b0e628'; // Replace with your Mailtrap username
+            $mail->Password = 'c87db6c3de5429'; // Replace with your Mailtrap password
             // Recipients
             $mail->setFrom('infokiqqs@gmail.com', 'Your Name');
             $mail->addAddress($email); // Add recipient
