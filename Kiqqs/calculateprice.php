@@ -49,7 +49,7 @@ if(isset($_POST["numberKunstgras"])){
                         </div>
                         <div class="input-group mb-3">
                             <span class="input-group-text">Echt gras velden</span>
-                            <input type="number" class="form-control" name="numberEchtgras" aria-label="Aantal volwassenen" value="<?php echo $numberEchtgras; ?>">
+                            <input type="number" class="form-control" name="numberEchtgras" value="<?php echo $numberEchtgras; ?>">
                         </div>
                         <div class="input-group mb-3">
                             <span class="input-group-text">Kunst gras velden</span>

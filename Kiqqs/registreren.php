@@ -43,7 +43,7 @@
 include('./includes/database.php');
 include "includes/functions.php";
 use PHPMailer\PHPMailer\PHPMailer;
-use PHPMailer\PHPMailer\Exception;
+
 
 require '../vendor/autoload.php';
 if ($_SERVER["REQUEST_METHOD"] == "POST") {
@@ -66,7 +66,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
                 $sql = "INSERT INTO gebruiker (naam, achternaam, email, wachtwoord, telefoon) 
                 VALUES (:naam, :achternaam, :email, :wachtwoord, :telefoon)";
         
-                $stmt = $conn->prepare($sql); // $conn is de PDO-verbinding uit de database.php-file
+                $stmt = $conn->prepare($sql); 
                 $stmt->bindParam(':naam', $naam);
                 $stmt->bindParam(':achternaam', $achternaam);
                 $stmt->bindParam(':email', $email);
@@ -78,26 +78,29 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
                 echo "Fout bij registratie: " . $e->getMessage(); // Geeft de algemene foutmelding van PDO terug. catch zet je achter try 
             }
         
+     try{   
         $mail = new PHPMailer(true);
  
         // Server settings
         $mail->isSMTP();
-        $mail->Host = 'smtp.mailtrap.io';
+        $mail->Host = 'sandbox.smtp.mailtrap.io';
         $mail->SMTPAuth = true;
         $mail->Port = 2525;
-        $mail->Username = '9099e086121c95'; // Replace with your Mailtrap username
-        $mail->Password = '871ba33a0a5aab'; // Replace with your Mailtrap password
-        // Recipients
+        $mail->Username = '6c5b8bd6b0e628'; // Replace with your Mailtrap username
+        $mail->Password = 'c87db6c3de5429'; // Replace with your Mailtrap password
         $mail->setFrom('infokiqqs@gmail.com', 'Your Name');
         $mail->addAddress($email); // Add recipient
 
         // Content
         $mail->isHTML(true);
         $mail->Subject = 'Uw accout is aangemaakt';
-        $mail->Body    ="Welkom  $naam $achternaam wij zijn blij uw al lid te hebben.";
+        $mail->Body    ="Welkom  $naam $achternaam wij zijn blij u al lid te hebben.";
     
  
         $mail->send();
+    }catch(PDOException $e){
+       echo 'mail niet verstuurd:', $e->getMessage();
+    }
     
          if(!$mail->Send()) {
             echo "Mailer Error: " . $mail->ErrorInfo;
