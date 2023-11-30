@@ -1,13 +1,16 @@
 <?php
+// Initialiseren van variabelen voor het berekenen van de prijs
 $calcPrice = false;
 $sizeFields = 0;
 $numberEchtgras = 0;
 $numberKunstgras = 0;
 
+// Controleren of het formulier is ingediend voor prijsberekening
 if(isset($_POST["calculate"])){
     $calcPrice = true;
 }
 
+// De ingevoerde waarden van het formulier ophalen
 if(isset($_POST["sizeFields"])){
     $sizeFields = $_POST["sizeFields"];
 }
@@ -22,6 +25,7 @@ if(isset($_POST["numberKunstgras"])){
 ?>
 <section>
     <div class="container mt-4 mb-4 bg-white border border-white">
+        <!-- Het formulier voor het invoeren van gegevens -->
         <form name="calculate" method="post" action="veld.php?veldID=<?php echo $veldID;?>">
             <div class="row px-4 py-4">
                 <div class="col-12 mb-4">
@@ -29,6 +33,7 @@ if(isset($_POST["numberKunstgras"])){
                 </div>
                 <div class="col">
                     <h5 class="pb-2">Hoeveel vierkante meter en soort gras</h5>
+                    <!-- Invoervelden voor het aantal vierkante meters en soorten gras -->
                     <div class="input-group mb-3">
                         <span class="input-group-text">Hoeveel m²</span>
                         <input type="number" class="form-control" name="sizeFields" id="sizeFields" value="<?php echo $sizeFields; ?>">
@@ -45,6 +50,7 @@ if(isset($_POST["numberKunstgras"])){
             </div>
             <div class="col-12 mb-4">
                 <div class="d-grid d-md-flex justify-content-md-end">
+                    <!-- Knop om het formulier in te dienen -->
                     <button class="btn btn-dark text-light" type="submit" value="calcPrice" name="calculate">Omrekenen</button>
                 </div>
             </div>
@@ -53,7 +59,9 @@ if(isset($_POST["numberKunstgras"])){
 </section>
 
 <?php 
+// Als prijsberekening is ingeschakeld
 if($calcPrice == true){
+    // Bereken de prijzen voor echt gras en kunstgras
     $totalPriceA =  ($numberEchtgras * $sizeFields) * $tblVeld["veld_price_a"];
     $totalPriceC =  ($numberKunstgras * $sizeFields) * $tblVeld["veld_price_c"];
     ?>
@@ -63,6 +71,7 @@ if($calcPrice == true){
                 <div class="col">
                     <div class="alert alert-white" role="alert">
                         <h5>Berekende prijs</h5>
+                        <!-- Tabel om de berekende prijzen weer te geven -->
                         <table class="table">
                             <thead>
                                 <tr>
@@ -71,6 +80,7 @@ if($calcPrice == true){
                                 </tr>
                             </thead>
                             <tbody>
+                                <!-- Rijen voor prijzen van echt gras en kunstgras -->
                                 <tr>
                                     <td>Prijs echt gras veld (<?php echo $numberEchtgras ."x &euro;".  number_format($tblVeld["veld_price_a"], 2) ."x". $sizeFields; ?>)</td>
                                     <td>&euro; <?php echo $totalPriceA ?></td>
@@ -81,6 +91,7 @@ if($calcPrice == true){
                                 </tr>
                             </tbody>
                             <tfoot>
+                                <!-- Totaalprijs van echt gras, kunstgras en toevoegingen -->
                                 <td><strong>Totaal</strong></td>
                                 <td><strong>&euro; <?php echo  number_format(($totalPriceA + $totalPriceC), 2) ;?></strong></td>
                             </tfoot>
@@ -90,4 +101,4 @@ if($calcPrice == true){
             </div>
         </div>
     </section>
-<?php } //einde if statement ?>
+<?php } // Einde if statement ?>
